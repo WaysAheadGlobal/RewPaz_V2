@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+
+class ProfessionalAuth
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     */
+    public function handle(Request $request, Closure $next)
+    {
+        if( Auth::check() && Auth::user()->role == 'Professional'){
+            /** @var User $user */
+            $user = User::where('status', '1')->first();
+            if ( $user) {
+            	return $next($request);
+            }
+        }
+        return redirect()->route('professional.login');
+        abort(403);  // permission denied error
+    }
+}

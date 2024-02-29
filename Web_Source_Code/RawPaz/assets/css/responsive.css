@@ -1,0 +1,508 @@
+@media (max-width: 1280.5px) {.invdi_sect .box_plan{padding: 35px 40px;}}
+.mobile_view_btn{display: none;
+}
+.user_img svg{max-width: 100%;}
+@media (max-width: 990.5px) {
+    .main-panel {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    .prof_box.messg_employ{padding: 15px;}
+    .messg_employ .messg_box{padding: 15px;padding-top: 0px;}
+    .messg_employ .messg_box{margin-top: 120px;}
+    .sidebar {
+        width: 100%;
+        background: transparent;
+        left: -100%;
+        transition: .6s ease-in-out;
+    }
+    
+    .flare__grid {
+        position: relative;
+        height: 100%;
+        display: block;
+    }
+    
+    .left__sidebar {
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        top: 0px;transition: .6s ease-in-out;
+        background: linear-gradient(104deg, #0068C4 0%, #00A7C5 100%);
+        height: 100%;
+        z-index: 2;
+    }
+    .left__sidebar.open_bar{left: 0;}
+    .mobile_view_btn span {display: flex;
+        align-items: center;
+        justify-content: center;position: fixed;z-index: 9;top: 67px;left: 10px;border-radius: 11px;background: #f6f6f6;color: #526484;font-size: 20px;box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);width: 40px;height: 40px;}
+    .left__sidebar.open_bar .sidebar{left: 0;}
+    .mobile_view_btn{cursor: pointer;display: block;}
+    .zoom_video_sect .video_lg,.zoom_video_sect .video_chat{width: 50%;flex: 0 0 50%;}
+    .Mapping_sect img{width: 100%;}
+    .grap_list_admin{grid-template-columns: auto;}
+    .box_card_rgt .prof_list .card_bx{display: block;}
+    .box_card_rgt .prof_list .card_bx .img_bx img{width: 100%;height: 100%;}
+    .sidebar-icon-only .sidebar{    top: 72px;}
+    .body_thnks .box.succ_box{width: auto;padding: 0 15px;}
+    .land_home .banner_sect{display: none;}
+    .linetcare_line img {
+        width: 100%;
+    }.box_card_rgt .prof_list .card_bx .img_bx{margin-bottom: 30px;}
+    /* .main-panel{padding: 10px;} */
+    .box_card_rgt .prof_list .card_bx .cont_bx{margin: 0;}
+    .plan__navbar{    grid-template-columns:repeat(1,1fr);}
+    .Testimonials_sect .Testim_rgt{margin: 0px;}
+    .Testimonials_sect {
+        padding: 20px 0;
+    }.body_thnks .box{width: auto;}
+    .navbar-collapse {
+        background: #fff;
+        z-index: 999;
+    }.bg_inner_mark:before{display: none;}
+    .dasp_grap>ul{    grid-template-columns: repeat(3,1fr);}
+    .navbar-collapse .nav-link:hover {
+    }
+    .plan__navbar .pln_mode p{margin-top: 0;}
+    .plan__navbar{margin-top: 15px;}
+    header.header_top.top-fixed .btnLogin {
+        display: block;
+    }.plan__navbar .plan_tab ul{grid-template-columns: 1fr;}
+    .plan__navbar .plan_tab ul li{margin-bottom: 40px;}
+    
+    .header_top .btn_join {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    header.header_top {
+        z-index: 6;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    
+    .navbar-toggler {
+        border: 0;
+        color: #000;
+    }
+    
+    .navbar-toggler-icon {
+        filter: unset;
+    }
+    
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    
+    .header_top .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 6px 15px;
+        padding-left: 0;
+    }
+    
+    .header_top .btnLogin {
+        color: #607688;
+        padding: 10px 15px;
+        padding-left: 0;
+    }
+    .crd_bx {
+        flex-wrap: wrap;
+    }
+    .crd_bx .mnth_emp,.tab_notif{flex-wrap: wrap;}
+    .Faq_sect:before,.Faq_sect:after{width: 650px;}
+    .plan_list{margin-top: 30px;}
+    .about_bg .card_bx{margin-bottom: 30px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+    .Testimonials_sect{display: block;}
+    .Testimonials_sect .Testim_lft,.Testimonials_sect .Testim_rgt{width: 100%;}
+    .team_sect .team_list{flex-wrap: wrap;}
+    .Home_service:after,.Home_service:after{content: none;}
+    .team_sect .bg_team{background: #fff;}
+    .header_top .navbar-expand-lg .navbar-nav .nav-link.active:after, .header_top .navbar-expand-lg .navbar-nav .nav-link:hover:after{display: none;}
+    .banner_home.form_sect .banner_sect{display: block;}
+    .banner_home.form_sect .left_banner{display: none;}
+    .banner_home.form_sect .sign_form{padding:30px 15px;}
+    .loonApplt_btn button.btn{padding: 13px 20px;width: 100%;}
+    .tab_list_login{grid-template-columns: auto;}
+    .sign_scrller{    padding-right: 15px;
+        margin-right: -15px;}
+ 
+    .banner_home.form_sect .sign_form{width: 100%;}
+}
+@media (max-width: 768.5px) {
+    .session_txt{font-size: 10px;letter-spacing: 6px;}
+    .slot_select label{width: 55px;height: 55px;font-size: 16px;}
+    .user_pof_edit .bx_prof input{width: 100%;}
+    .user_pof_edit{width: 100%;}
+    .btn_grp_dash{display: flex;flex-wrap: wrap;}
+    .btn_grp_dash .btn, .Vett_admin .btn_grp_dash .btn{width: auto;}
+    .list_tk{flex-wrap: wrap;}
+    canvas#myChart {
+        width: 100%!important;
+    }
+    .table_visting .table td a {
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+    .chat_sect_left{max-width: 100%;
+        flex: 0 0 100%;margin-bottom: 30px;}
+    .chat_sect_bx{flex-wrap: wrap;}
+    .table_visting .table td .day_bx{font-size: 14px;}
+    .Appoint_list_admin .table_visting .table td .day_bx p{font-size: 12px;}
+    .table_visting .table th{font-size: 16px;}
+    .table_visting .table td .name_txt{padding-left: 10px;}
+    .banner_home.form_sect .sign_form p{margin-bottom: 15px;}
+    .banner_home.form_sect .sign_form h5{font-size: 24px;margin-bottom: 10px;}
+    .more_opt .social_list li{width: 100%;}
+    .banner_home.form_sect .sign_form p span svg {
+        width: 100px;
+}
+    
+    
+  
+    button.call_end_btn{bottom: -65px;
+        right: 12%;}
+    .caregivers_sect{margin-bottom: 40px;}
+    .caregivers_sect .heading_title{font-size: 26px;}
+    .header_top .navbar {
+        padding: 5px 0;
+    }
+    .btn_grp_dash .btn:nth-child(2){margin:10px 0;}
+    .prigress-bar,.brd_btm{display: block;}
+    .user_pof_edit .user_bx img{width: 100%;height: 100%;}
+    .navbar-collapse{    z-index: 999; position: absolute; width: 100%;top: 71px;padding: 15px;}
+    .invdi_sect .box_plan{padding: 35px;}
+    .plan_card{padding: 20px;}
+    .plan_desp_d{margin-top: 30px;}
+    .team_sect .team_list .card_bx .icon_bx img{width: 100%;height: auto;}
+    .team_sect .team_bx{padding-top:30px;}
+    .plan_sect{    margin-top: 50px;}
+    .Home_service{padding-bottom: 40px;}
+    .slot_select label{margin-bottom: 20px;}
+    .slot_list_sect,.time_slot_sect{flex-wrap: wrap;}
+    .tab_notif .list_tab .nav-tabs .nav-item{padding: 0 5px; margin-bottom: 10px;}
+    .admin_frm button.btn{width: 60%;}
+    .banner_home.form_sect.admin_login{background: transparent;}
+    .banner_home.form_sect.admin_login .admin_frm .card_bx h3{font-size: 24px;}
+   
+    .banner_home.form_sect.admin_login .admin_frm {
+        width: 100%;    margin: 0 20px;
+    }
+    .frm_frog{display: block;}
+    .banner_home.form_sect.admin_login .banner_sect {
+        display: block;background: transparent!important;
+    }
+
+    .banner_home.form_sect.admin_login .admin_frm .card_bx{width: auto;padding: 20px;}
+    .dasp_grap>ul{    grid-template-columns:auto;}
+    .user_pof_edit {
+        display: block;
+    }.grap_chat{padding-left: 0;}
+    .dash_heading_title{display: block;}
+    .table_data {
+        overflow: auto;
+    }
+    .pof_edit_sect {
+        display: block;
+    }
+    
+    .pof_edit_sect .video_bx .image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .pof_edit_sect .video_bx {
+        margin-top: 30px;
+    }
+    .slot_date_sect ul li, .time_slot_sect ul li{margin-bottom: 15px;}
+    .pof_edit_sect .bio_sect {
+        margin: 20px 0;
+    }
+    .full-details .card_bx,.list_prof_point,.list_prof_point .detail_cont{display: block;}
+    .full-details .card_bx .cont_details .head,.list_prof_point .detail_cont{display: block;}
+    .Recommend_sect .list_Recom{grid-template-columns: repeat(2,1fr);}
+    .Recommend_sect .list_Recom .card_bx{margin-bottom: 20px;}
+    .full-details .card_bx .img_bx img,.list_prof_point .video_bx .image,.video_bx .image img{width: 100%;height: 100%;}
+    .list_prof_point .detail_cont .box-item{width: 100%;}
+    .pof_edit_sect .btn_grp .btn{width: 100%;}
+    .user_pof_edit .bx_prof{margin-bottom: 20px;text-align: center;}
+    .user_pof_edit .user_bx{margin: 0 auto;}
+}
+@media (max-width: 575.5px) {
+    button.call_end_btn {
+        bottom: 9px;
+        right: 5%;
+    }
+    .zoom_video_sect .video_lg,.zoom_video_sect .video_chat{width: 100%;flex: 0 0 100%;}
+    .box_card_rgt .prof_list .card_bx .cont_bx .Speci_sect{flex-wrap: wrap;gap: 20px;}
+    .box_card_rgt .prof_list .card_bx .rating_bx{display: block;}
+    .Appoint_sect:after{width: 100%;height: 100%;}
+    .Recommend_sect .list_Recom .card_bx .img_bx img{height: auto;}
+    .box_card_rgt .prof_list .card_bx .rating_bx ul{margin-bottom: 20px;}
+    .Recommend_sect .list_Recom {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bx_hd_title p{font-size: 18px;}
+    .prof_box.messg_employ{}
+    .prof_box.messg_employ,
+ 
+    .messg_employ .messg_box{width: auto;}
+    .box_plan h3{font-size: 24px;}
+    .pay__bx:before,.pay__bx::after{display: none;}
+    .invdi_sect .box_plan{padding: 15px;}
+    .crd_details{margin: 0;}.paym_card{margin-top: 20px;}
+    .credit_card_bx ul{grid-template-columns: auto;}
+    .Appoint_sect img{width:100%;}
+    .admin_appon_tab {
+        display: block;
+    }.credit_card_bx .grp_sect{flex-wrap: wrap;}
+    .credit_card_bx ul li{margin-top: 20px;}
+    .Appoint_sect h3{font-size: 24PX;}
+    .admin_navbar {
+        margin-bottom: 10px;
+    }.Subscrip_sect .btn_grp .btn{width: 100%;}
+    .admin_navbar .nav-tabs .nav-item .nav-link {
+        width: auto;
+        font-size: 10px;
+    }
+    .Vett_admin .head_Vett .bio_detail{margin: 0;}
+    .slot_date_sect ul li, .time_slot_sect ul li {
+        padding: 10px 12px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .table_visting {
+        overflow: auto;
+    }
+    
+    .table_visting .table td {
+        white-space: nowrap;
+    }
+    .slot_date_sect ul {
+        margin: 0;
+    }
+    .head_appoint {
+        FLEX-WRAP: WRAP;
+    }
+    .list_consult .card_bx {flex-wrap: wrap;}
+
+.list_consult .card_bx p +p {
+    padding-left: 0;
+}.health_calc_sect{display: block;}
+    .head_appoint .mnth_emp {
+        WIDTH: 100%;
+        display: block;
+    }
+    
+    .crd_bx .data_del .btn {
+        margin-bottom: 10px;
+    }
+    
+    .data_del {
+        text-align: center;
+    }
+    .user_pof_edit .bx_prof{margin-left: 0;margin-top: 20px;}
+    
+    .cal_heading,.cal_heading .cal_date{display: block;}
+    .btn_grp_dash .btn,.Vett_admin .btn_grp_dash .btn{padding: 8px 10px; margin-bottom: 10px;}
+    .Vett_admin .head_Vett .bio_detail .head .frm_grp{width: auto;}
+    .Vett_admin .head_Vett .bio_detail .head{display: block;}
+    .Vett_admin .head_Vett{flex-wrap: wrap;}
+    .Vett_admin .head_Vett .prof_img{flex-wrap: wrap;}
+    .dasp_grap{padding: 15px;}
+    .table_visting.table_data{width: auto;}
+    .sidebar-icon-only .flare__grid {
+        grid-template-columns: 70px 300px;
+    }
+    .cal_heading .cal_date .date_txt {
+        margin: 0;
+        padding: 10px 0;
+    }
+.Faq_sect:before, .Faq_sect:after{
+width: 460px;
+}
+.banner_sect .left_banner, .banner_sect .rgt_banner{width: 100%;}
+.banner_home.form_sect .sign_form{width: 100%;}
+.team_sect .team_list .card_bx{margin-bottom: 30px;}
+.team_sect .team_list .card_bx{width: 100%;}
+.team_sect .team_list .card_bx .icon_bx img{width: 100%;height: 100%;}
+.banner_circle {
+    display: none;
+}
+
+.banner_bx {
+    display: none;
+}
+.bx_banner_mid {
+    border-radius: 26.129px;
+    background: #fff;
+    box-shadow: 0px 11.198244094848633px 29.861984252929688px 0px rgba(109, 141, 173, 0.25);
+    width: 400px;
+    padding: 20px;
+    top: 0;
+    position: relative;
+    left: 0;
+    margin: 140px auto;
+    transform: initial;
+}
+.banner_home {    
+    background-image: url(../images/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;overflow: hidden;
+
+}
+.plan_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+.plan_list .plan_card{display: block;}
+.plan_list .plan_card .plan_price h4 {
+    margin: 0;
+    margin-right: 20px;
+}.team_sect{margin:40px 0;}
+.Home_service{padding-bottom: 40px;}
+.plan_sect{margin-top: 40px;}
+.team_sect .team_bx{padding-top: 40px;}
+
+.full-details .card_bx {
+    display: block;
+}
+
+.full-details .card_bx .img_bx img {
+    width: 100%;
+}
+
+.full-details .card_bx .cont_details .head {
+    display: block;
+}
+
+.full-details .card_bx .cont_details .btn_grp .btn {
+    margin-top: 10px;
+}
+
+.list_prof_point {
+    display: block;
+}
+
+.video_bx .image img {
+    width: 100%;
+}
+
+.list_prof_point .video_bx .image {
+    width: auto;
+}
+
+.list_prof_point .bx_crd ul {
+    display: block;
+}
+
+.list_prof_point .detail_cont {
+    display: block;
+}
+.Appoint_sect.shareprof_succ img{width: 100%;}
+.list_prof_point .detail_cont .box-item {
+    width: 100%;
+}
+.full-details .card_bx .cont_details .head .btn{margin-top: 20px;}
+.list_prof_point .detail_cont .box-item:first-child .bx_crd:first-child {
+    height: auto;
+}
+
+.list_prof_point .detail_cont .box-item+.box-item .bx_crd:first-child {
+    height: auto;
+}
+.bx_banner_mid h3,.Home_aboutus .About_lft h3,.serv_lft h3,.heading,.Testimonials_sect .Testim_lft h3,.faq_lft h3,.team_sect .team_bx h3,.getstart_bx h3{font-size: 32px;line-height: 48px;}
+}
+
+@media (max-width: 460.5px) {
+    .full-details .card_bx .cont_details .btn_grp{text-align: center;}
+    .Reviews_sect .Reviews_slider .card_bx .img_bx{margin: 0 auto;}
+    .Reviews_sect .Reviews_slider .card_bx h3{display: block;}
+    .Reviews_sect .Reviews_slider .card_bx{display: block;}
+    .dasp_grap>ul{    grid-template-columns: repeat(1,1fr);}
+    .Reviews_sect .Reviews_slider .card_bx .cont_bx{margin-left: 0;text-align: center;}
+    .banner_vetting .cont_banner{width: 300px;}
+    .banner_vetting .cont_banner h3{font-size: 22px;}
+    .bx_banner_mid h3, .Home_aboutus .About_lft h3, .serv_lft h3, .heading, .Testimonials_sect .Testim_lft h3, .faq_lft h3, 
+    .team_sect .team_bx h3, .getstart_bx h3{font-size: 24px;line-height: 36px;}
+    .slider_testi .card_bx .image_bx {
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }.Reviews_sect .Reviews_slider .card_bx h4{justify-content: center;}
+    .Faq_sect:before, .Faq_sect:after {
+        width: 360px;
+    }
+    .plan_list .plan_card .plan_price {
+        margin: 0;
+        display: block;
+    }
+    .card_bx p{    font-size: 16px; line-height: 24px;}
+    .Testimonials_sect {
+        padding: 0;
+    }
+    .getstart_bx h3{margin-bottom: 60px;}
+    .Testimonials_sect .Testim_lft{    padding: 0 30px;}
+    .Testimonials_sect .Testim_rgt .slider_testi .card_bx {
+        margin-right: 20px;    display: block;
+    }
+    .Faq_sect:before, .Faq_sect:after {
+        width: 250px;
+    }
+    .plan_list .plan_card .plan_price h4 {
+        margin-bottom: 20px;
+    }
+    
+    .plan_list .plan_card .plan_price {
+        text-align: center;
+    }
+    
+    .bx_banner_mid {
+        width: 320px;
+    }
+    
+    .serv_lft .list_service .box_crd .content h3 {
+        font-size: 20px;
+    }
+    
+    .list_service .box_crd .content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .list_service .box_crd .icon svg {
+        width: 40px;
+    }
+    
+    .Testimonials_sect .Testim_rgt {
+        margin: 0;
+    }
+    
+    .Testimonials_sect .Testim_rgt .slider_testi .card_bx {
+        margin: 0;
+    }
+    .about_bg .card_bx .icon svg {
+        width: 50px;
+    }
+    
+    .about_bg .card_bx .icon {
+        margin-bottom: 15px;
+    }footer.footer{margin-top: 40px;}
+    .Home_aboutus{padding: 40px 0;}
+    .header_top .navbar{padding: 0;}
+}
+@media (min-width: 1024px) and (max-width: 1440px){
+    .banner_bx{    top: -8px;}
+    .banner_home.form_sect .sign_form .col-lg-3 {
+        width: 33%!important;
+    }
+    .banner_bx img {
+        width: 280px;
+    }
+    .frm_grp.frm_grp_btn a.btn{padding: 10px;}
+    }

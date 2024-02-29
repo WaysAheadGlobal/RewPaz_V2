@@ -1,0 +1,341 @@
+@media (max-width: 990.5px) {
+    .navbar-collapse {
+        background: #fff;
+        z-index: 999;
+    }
+    .dasp_grap>ul{    grid-template-columns: repeat(3,1fr);}
+    .navbar-collapse .nav-link:hover {
+    }
+    
+    header.header_top.top-fixed .btnLogin {
+        display: block;
+    }
+    
+    .header_top .btn_join {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    header.header_top {
+        z-index: 6;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    
+    .navbar-toggler {
+        border: 0;
+        color: #000;
+    }
+    
+    .navbar-toggler-icon {
+        filter: unset;
+    }
+    
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    
+    .header_top .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 10px 15px;
+        padding-left: 0;
+    }
+    
+    .header_top .btnLogin {
+        color: #607688;
+        padding: 10px 15px;
+        padding-left: 0;
+    }
+    .crd_bx {
+        flex-wrap: wrap;
+    }
+    .crd_bx .mnth_emp,.tab_notif{flex-wrap: wrap;}
+    .Faq_sect:before,.Faq_sect:after{width: 650px;}
+    .plan_list{margin-top: 30px;}
+    .about_bg .card_bx{margin-bottom: 30px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+    .Testimonials_sect{display: block;}
+    .Testimonials_sect .Testim_lft,.Testimonials_sect .Testim_rgt{width: 100%;}
+    .team_sect .team_list{flex-wrap: wrap;}
+    .Home_service:after,.Home_service:after{content: none;}
+    .team_sect .bg_team{background: #fff;}
+    .header_top .navbar-expand-lg .navbar-nav .nav-link.active:after, .header_top .navbar-expand-lg .navbar-nav .nav-link:hover:after{display: none;}
+}
+@media (max-width: 768.5px) {
+    .tab_notif .list_tab .nav-tabs .nav-item{padding: 0 5px; margin-bottom: 10px;}
+    .admin_frm button.btn{width: 60%;}
+    .banner_home.form_sect.admin_login{background: transparent;}
+    .banner_home.form_sect.admin_login .admin_frm .card_bx h3{font-size: 24px;}
+    .banner_home.form_sect .left_banner{display: none;}
+    .banner_home.form_sect.admin_login .admin_frm {
+        width: 100%;    margin: 0 20px;
+    }
+    .frm_frog{display: block;}
+    .banner_home.form_sect.admin_login .banner_sect {
+        display: block;background: transparent!important;
+    }
+    .banner_home.form_sect.admin_login .admin_frm .card_bx{width: auto;padding: 20px;}
+    .dasp_grap>ul{    grid-template-columns: repeat(2,1fr);}
+    .user_pof_edit {
+        display: block;
+    }
+    .dash_heading_title{display: block;}
+    .table_data {
+        width: 360px;
+        overflow: auto;
+    }
+    .pof_edit_sect {
+        display: block;
+    }
+    
+    .pof_edit_sect .video_bx .image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .pof_edit_sect .video_bx {
+        margin-top: 30px;
+    }
+    .slot_date_sect ul li, .time_slot_sect ul li{margin-bottom: 15px;}
+    .pof_edit_sect .bio_sect {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 575.5px) {
+    .Appoint_sect img{width:100%;}
+    .admin_appon_tab {
+        display: block;
+    }
+    .Appoint_sect h3{font-size: 24PX;}
+    .admin_navbar {
+        margin-bottom: 10px;
+    }
+    .admin_navbar .nav-tabs .nav-item .nav-link {
+        width: auto;
+        font-size: 10px;
+    }
+    .Vett_admin .head_Vett .bio_detail{margin: 0;}
+    .slot_date_sect ul li, .time_slot_sect ul li {
+        padding: 10px 12px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .table_visting {
+        overflow: auto;
+    }
+    
+    .table_visting .table td {
+        white-space: nowrap;
+    }
+    .slot_date_sect ul {
+        margin: 0;
+    }
+    .head_appoint {
+        FLEX-WRAP: WRAP;
+    }
+    .list_consult .card_bx {flex-wrap: wrap;}
+
+.list_consult .card_bx p +p {
+    padding-left: 0;
+}.health_calc_sect{display: block;}
+    .head_appoint .mnth_emp {
+        WIDTH: 100%;
+        display: block;
+    }
+    
+    .crd_bx .data_del .btn {
+        margin-bottom: 10px;
+    }
+    
+    .data_del {
+        text-align: center;
+    }
+    .user_pof_edit .bx_prof{margin-left: 0;margin-top: 20px;}
+    .user_pof_edit .bx_prof input{width: auto;}
+    .cal_heading,.cal_heading .cal_date{display: block;}
+    .btn_grp_dash .btn,.Vett_admin .btn_grp_dash .btn{padding: 8px 10px; margin-bottom: 10px;}
+    .Vett_admin .head_Vett .bio_detail .head .frm_grp{width: auto;}
+    .Vett_admin .head_Vett .bio_detail .head{display: block;}
+    .Vett_admin .head_Vett{flex-wrap: wrap;}
+    .Vett_admin .head_Vett .prof_img{flex-wrap: wrap;}
+    .dasp_grap{padding: 15px;}
+    .table_visting.table_data{width: auto;}
+    .sidebar-icon-only .flare__grid {
+        grid-template-columns: 70px 300px;
+    }
+    .cal_heading .cal_date .date_txt {
+        margin: 0;
+        padding: 10px 0;
+    }
+.Faq_sect:before, .Faq_sect:after{
+width: 460px;
+}
+.banner_sect .left_banner, .banner_sect .rgt_banner{width: 100%;}
+.banner_sect{display: none;}
+.team_sect .team_list .card_bx{margin-bottom: 30px;}
+.team_sect .team_list .card_bx{width: 100%;}
+.team_sect .team_list .card_bx .icon_bx img{width: 100%;height: 100%;}
+.banner_circle {
+    display: none;
+}
+
+.banner_bx {
+    display: none;
+}
+.bx_banner_mid {
+    border-radius: 26.129px;
+    background: #fff;
+    box-shadow: 0px 11.198244094848633px 29.861984252929688px 0px rgba(109, 141, 173, 0.25);
+    width: 400px;
+    padding: 20px;
+    top: 0;
+    position: relative;
+    left: 0;
+    margin: 140px auto;
+    transform: initial;
+}
+.banner_home {    
+    background-image: url(../images/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;overflow: hidden;
+
+}
+.plan_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+.plan_list .plan_card{display: block;}
+.plan_list .plan_card .plan_price h4 {
+    margin: 0;
+    margin-right: 20px;
+}.team_sect{margin:40px 0;}
+.Home_service{padding-bottom: 40px;}
+.plan_sect{margin-top: 40px;}
+.team_sect .team_bx{padding-top: 40px;}
+
+.full-details .card_bx {
+    display: block;
+}
+
+.full-details .card_bx .img_bx img {
+    width: 100%;
+}
+
+.full-details .card_bx .cont_details .head {
+    display: block;
+}
+
+.full-details .card_bx .cont_details .btn_grp .btn {
+    margin-top: 10px;
+}
+
+.list_prof_point {
+    display: block;
+}
+
+.video_bx .image img {
+    width: 100%;
+}
+
+.list_prof_point .video_bx .image {
+    width: auto;
+}
+
+.list_prof_point .bx_crd ul {
+    display: block;
+}
+
+.list_prof_point .detail_cont {
+    display: block;
+}
+.Appoint_sect.shareprof_succ img{width: 100%;}
+.list_prof_point .detail_cont .box-item {
+    width: 100%;
+}
+.full-details .card_bx .cont_details .head .btn{margin-top: 20px;}
+.list_prof_point .detail_cont .box-item:first-child .bx_crd:first-child {
+    height: auto;
+}
+
+.list_prof_point .detail_cont .box-item+.box-item .bx_crd:first-child {
+    height: auto;
+}
+.bx_banner_mid h3,.Home_aboutus .About_lft h3,.serv_lft h3,.heading,.Testimonials_sect .Testim_lft h3,.faq_lft h3,.team_sect .team_bx h3,.getstart_bx h3{font-size: 32px;line-height: 48px;}
+}
+
+@media (max-width: 460.5px) {
+    .dasp_grap>ul{    grid-template-columns: repeat(1,1fr);}
+    .banner_vetting .cont_banner{width: 300px;}
+    .banner_vetting .cont_banner h3{font-size: 22px;}
+    .bx_banner_mid h3, .Home_aboutus .About_lft h3, .serv_lft h3, .heading, .Testimonials_sect .Testim_lft h3, .faq_lft h3, 
+    .team_sect .team_bx h3, .getstart_bx h3{font-size: 24px;line-height: 36px;}
+    .slider_testi .card_bx .image_bx {
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    .Faq_sect:before, .Faq_sect:after {
+        width: 360px;
+    }
+    .plan_list .plan_card .plan_price {
+        margin: 0;
+        display: block;
+    }
+    .card_bx p{    font-size: 16px; line-height: 24px;}
+    .Testimonials_sect {
+        padding: 0;
+    }
+    .getstart_bx h3{margin-bottom: 60px;}
+    .Testimonials_sect .Testim_lft{    padding: 0 30px;}
+    .Testimonials_sect .Testim_rgt .slider_testi .card_bx {
+        margin-right: 20px;    display: block;
+    }
+    .Faq_sect:before, .Faq_sect:after {
+        width: 250px;
+    }
+    .plan_list .plan_card .plan_price h4 {
+        margin-bottom: 20px;
+    }
+    
+    .plan_list .plan_card .plan_price {
+        text-align: center;
+    }
+    
+    .bx_banner_mid {
+        width: 320px;
+    }
+    
+    .serv_lft .list_service .box_crd .content h3 {
+        font-size: 20px;
+    }
+    
+    .list_service .box_crd .content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .list_service .box_crd .icon svg {
+        width: 40px;
+    }
+    
+    .Testimonials_sect .Testim_rgt {
+        margin: 0;
+    }
+    
+    .Testimonials_sect .Testim_rgt .slider_testi .card_bx {
+        margin: 0;
+    }
+    .about_bg .card_bx .icon svg {
+        width: 50px;
+    }
+    
+    .about_bg .card_bx .icon {
+        margin-bottom: 15px;
+    }footer.footer{margin-top: 40px;}
+    .Home_aboutus{padding: 40px 0;}
+    .header_top .navbar{padding: 0;}
+}

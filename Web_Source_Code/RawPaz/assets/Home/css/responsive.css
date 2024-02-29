@@ -1,0 +1,210 @@
+
+@media (min-width: 1199px) and (max-width:1300px){
+  .testi_list .card_bx .inner_bt{padding: 0px 0 30px;}
+  .Testimonials_sect .slick-slide .inner_bt .cont_testi{padding: 0 30px;}
+  .Testimonials_sect .slick-slide .inner_bt .cont_testi::after,.Testimonials_sect .slick-slide .inner_bt .cont_testi::before{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+  .Testimonials_sect .slick-slide .inner_bt .cont_testi::after{}
+}
+
+
+@media (max-width: 990.5px) {
+.header_top .btn_join {
+    display: block;
+    margin-top: 10px;
+}
+
+header.header_top {
+    z-index: 6;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-toggler {
+    border: 0;
+    color: #000;
+}
+
+.navbar-toggler-icon {
+    filter: unset;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.header_top .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 15px;
+    padding-left: 0;
+}
+
+.header_top .btnLogin {
+    color: #607688;
+    padding: 10px 15px;
+    padding-left: 0;
+}
+
+}
+
+
+footer.footer {
+    margin-top: 60px;
+  }
+  
+  .footer_bx .heading_ft {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.36px;
+    margin-bottom: 30px;
+  }
+  
+  .footer_bx ul {
+      margin: 0;
+  }
+  
+  .footer_bx ul li {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .footer_bx ul li a {
+    color: rgba(51, 51, 51, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+  }
+  
+  .footer_bx p {
+    color: rgba(51, 51, 51, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    margin: 24px 0;
+  }
+  ul.list_ic li {}
+  
+  ul.list_ic li a {
+      display: flex;
+      align-items: center;
+  }
+  
+  ul.list_ic li a span:last-child {
+      margin-left: 10px;
+  }
+  
+  ul.ft_soical li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  ul.ft_soical li a {}
+  
+  ul.ft_soical {
+    margin: 0 -15px;
+  }
+  
+  .footer_btm {
+    background: #0089BA;
+    padding: 10px 0;
+    margin-top: 30px;
+  }
+  .getstart_bx .btn:hover,.header_top .btn_join:hover,.btn_started:hover,.team_sect .team_list .card_bx .icon_bx .list_social ul li a:hover,.plan_banner .planBanner_cont button.btn:hover{background: #FDB400;border-color: #FDB400;}
+  .footer_btm p,.footer_btm p a {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1440px){
+    .plan_sect .plan_card{padding: 15px 20px;}
+    .testi_list .card_bx .inner_bt {
+    /* height: 420px; */
+    }
+
+  }
+  @media (min-width: 360px) and (max-width: 768px){
+.moment_list .mnt_card{width:100%;}
+.moment_list .mnt_card:first-child{margin-left:0px;}
+.moment_list .mnt_card:last-child{margin-right:0px;}
+    .header_top .navbar .btn_grp{padding-bottom: 30px;}
+  .plan_wrapp{padding: 30px 15px;}
+  .plan_sect .plan_card{margin-bottom: 30px;}
+  .team_list .card_bx{margin: 0 auto; margin-bottom: 30px;}
+  .getstart_bx h3{font-size: 36px;}
+  .about_left .head p, .Services_home .head p{font-size: 38px;}
+  .getstart_bx p{font-size: 18px;}
+  .Services_home .media_img,.about_home .btn_grp{margin-bottom: 30px;}
+  .team_sect .head h3,.Faq_sect .head h3,.heading_bx h3{font-size: 32px;}
+  .team_sect .head p{font-size: 26px;line-height: 32px;}
+  .plan_wrapp .paln_inner,.team_list,.moment_list{grid-template-columns: auto;}
+  .moment_list{border: 0;}
+  .mnt_card:nth-child(2) .inner_bx{transform: initial;}
+  .moment_sect:after,.moment_list:after,.plan_sect .heading_bx::after,.team_sect:after{display: none;}
+  .moment_list .mnt_card .inner_bx{background: #fff;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    border-radius: 24px;}
+  .moment_list .mnt_card:nth-child(2) .inner_bx{background: linear-gradient(197deg, #008BBB 16.44%, #0DCEF1 85.12%);}
+  .moment_list{gap: 30px;flex-wrap: wrap;}
+  .heading_bx h3 span{display: initial;}
+  .moment_sect .heading_bx{margin-bottom: 30px;}
+  button.talktous{}
+  .team_sect,.bg_getstarter{padding-bottom: 0;}
+  .getstart_bx{border-radius: 24px;}
+  .Faq_sect .line_grp,.plan_sect .heading_bx .line_grp,.line_grp{display: none;}
+  .Faq_sect .head{text-align: center;}
+  .plan_sect .heading_bx{padding: 0 15px;}
+  .Services_home .head,.about_left .head{text-align: center;display: flex;justify-content: center;gap: 10px;}
+  .Services_home .head h3,.about_left .head h3{text-align: center;color: #676767;font-family: Nunito Sans;line-height: 1;font-size: 26px;}
+  .Services_home .head span,.getstart_bx p span{display: inline;}
+  .Services_home .head p,.about_left .head p{font-family: Nunito Sans;margin: 0;line-height: 1;font-size: 26px;}
+  .Services_home .head{margin-bottom: 0;}
+  .about_left .head{margin-bottom: 30px;}
+  .team_list{
+    flex-wrap: wrap;
+}
+}
+@media (min-width: 360px) and (max-width:570px){
+  .inr_bnnr_section .media_img, .inr_bnnr_section .media_video {
+    object-fit: contain;
+    object-position: top;
+}
+
+.inr_bnnr_section {}
+
+.banner_sect .bnnr_cntnt {
+    border-radius: 4px;
+    top: inherit;
+    min-height: auto;
+    bottom: 8px;
+}
+
+.inr_bnnr_section {
+    min-height: 302px;
+}
+  .moment_sect{padding-bottom: 0;}
+  .plan_sect{padding-top: 30px;}
+  .service_list:after{display: none;}
+  .plan_sect .plan_card{margin: 0 0 30px;}
+  .Testimonials_sect .slick-track{padding: 60px 0;}
+  .Testimonials_sect .slick-slide .inner_bt,
+  .Testimonials_sect .slick-slide.slick-center .inner_bt{transform: inherit!important;}
+  .Testimonials_sect{padding: 0 15px;}
+  .team_sect .head h3, .Faq_sect .head h3, .heading_bx h3{font-size: 26px;text-align: center;}
+  .Testimonials_sect .slick-prev:after,.Testimonials_sect .slick-next:after{width: 50px;height: 50px;}
+  .Testimonials_sect .slick-prev:after{left: -15px;}
+  .Testimonials_sect .slick-next:after{right: -15px;}
+  .about_rgt .media_img:after{top: -14px;right: -7px;}
+  .service_list .item_crd .icon{flex: 0 0 50px;width: 50px;}
+  .header_top .navbar-expand-lg .navbar-nav .nav-link.active:after, .header_top .navbar-expand-lg .navbar-nav .nav-link:hover:after{display: none;}
+  .inr_bnnr_section .bnnr_cntnt{width: 350px;}
+  .moment_sect .heading_bx h3:after,.moment_sect .heading_bx h3::before{width: 24px;height: 24px;background-size: cover;}
+}

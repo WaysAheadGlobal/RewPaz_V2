@@ -1,0 +1,327 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
+use App\Models\Employee;
+use App\Models\Professional;
+use App\Models\Transaction_detail;
+use App\Models\Token_use;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+
+use function PHPSTORM_META\type;
+
+class EmployeeController extends Controller
+{
+    //
+    public function register(){
+        try{
+            return view('employee.sign-up');
+        }catch(\Exception $e){
+            return $e->getMessage();
+        }
+    }
+
+    public function empRegistration(Request $request){
+        $request->validate([
+            'name' => 'required|exists:users,name',
+            'email' => 'required|exists:users,email',
+            'referral_code' => 'required|exists:users,unique_refferal_code',
+            'birth_year' => 'required',
+            'gender' => 'required',
+            'zip_code' => 'required',
+            'is_agree' => 'required',
+            'otp1' => 'required',
+            'otp2' => 'required',
+            'otp3' => 'required',
+            'otp4' => 'required',
+            ],
+            [
+            'is_agree.required' => 'Please check this box',
+            'otp1.required'=> 'Put OTP 1,',
+            'otp2.required'=> 'Put OTP 2,',
+            'otp3.required'=> 'Put OTP 3,',
+            'otp4.required'=> 'Put OTP 4.',
+            ]
+        );
+        $data =array(
+            'status'=>'0',
+            'approved'=>'1',
+            'otp'   => bcrypt('1234'),
+        );
+
+
+        $result=User::where('email',$request->email)
+                    ->where('name',$request->name)
+                    ->where('unique_refferal_code',$request->referral_code)
+                    ->first();
+        $result->update($data) ;
+               // dd($result);
+        if($result){
+
+            $Employee = new Employee();
+            $Employee->user_id = $result->id;
+            $Employee->gender = $request->gender;
+            $Employee->birth_year = $request->birth_year;
+            $Employee->zip_code = $request->zip_code;
+            $res=$Employee->save();
+
+            if($res)
+            {
+               // echo "now subscribe";
+               return redirect('employee/suggestion/'.$result->uid)->with('success', '!! Employee registration successfully done, Now do login !!');
+            }else{
+                return back()->with('error', 'Oops! Something went wrong!');
+            }
+        }
+
+    }
+    public function login(){
+        try{
+            return view('employee.login');
+        }catch(\Exception $e){
+            return $e->getMessage();
+        }
+    }
+
+    public function empLogin(Request $request){
+
+        $request->validate([
+            'email'         => 'required|email|exists:users,email',
+            'otp1'          => 'required',
+            'otp2'          => 'required',
+            'otp3'          => 'required',
+            'otp4'          => 'required',
+
+        ]);
+
+        $user_given_otp = $request->{'otp1'}.$request->{'otp2'}.$request->{'otp3'}.$request->{'otp4'};
+        //dd($user_given_otp);
+        $user = User::where('email', $request->email)->where('role', 'Employee')->count();
+        //  dd($user);
+        if($user >0){
+            $verifiedUser = User::where('email', $request->email)->first();
+                    //  dd($verifiedUser);
+            if (Hash::check($user_given_otp, $verifiedUser->otp))
+            {
+                // echo "yes";
+                Auth::login($verifiedUser);
+                if(auth()->user()->status == 1){
+                    return redirect('employee/professionals')->with('success', '!! Employee logged in !!');
+                }else{
+                    return redirect('employee/suggestion/'.$verifiedUser->uid)->with('success', 'Employee logged in');
+                }
+            }else{
+                return back()->with('error','Oops! OTP is incorrect!!');
+            }
+        }else{
+            return back()->with('error','Oops! No user exist with this Email!');
+        }
+    }
+
+    public function professional_lists(Request $request){
+
+
+        $result= User::where('users.id', Auth::user()->id)->join('employees', 'employees.user_id','=','users.id')->get()->first();
+        //$pagi=Professional::query()->paginate(3);
+        $prof = Professional::where('professionals.expertise',$result->household_service)
+       ->Where('professionals.language','LIKE', '%'.$result->language_preferred.'%')
+        ->Where('professionals.availability_days','LIKE', '%'.$result->suitable_day.'%')
+       ->Where('professionals.availability_time','LIKE', '%'.$result->preferred_time_slot.'%')
+        // ->whereRaw("find_in_set('".$result->language_preferred."',professionals.language)")
+        // ->whereRaw("find_in_set('".$result->suitable_day."',professionals.availability_days)")
+        // ->whereRaw("find_in_set('".$result->preferred_time_slot."',professionals.availability_time)")
+
+        ->leftJoin('users','users.id','=','professionals.user_id')
+        //->dd();
+        ->get();
+       // $pagi=$prof->paginate(5);
+        $res=$prof->count();
+        //dd($prof);
+        return view('employee.prof-lists',compact('prof','res','result'));
+
+
+
+
+    //     $result = Professional::where('professionals.expertise',$request->exprt)
+    //     ->Where('professionals.language','LIKE', '%'.$request->lang.'%')
+    //      ->Where('professionals.availability_days','LIKE', '%'.$request->day.'%')
+    //     ->Where('professionals.availability_time','LIKE', '%'.$request->time.'%')
+    //     ->leftJoin('users','users.id','=','professionals.user_id')
+    //     ->paginate(2);
+    //     // $res=$prof->count();
+    //     // dd($prof);
+    //    // $pagi=$prof->paginate(5);
+    //     return view('employee.load_professionals',compact('result'));
+    }
+    public function action(Request $request)
+    {
+       //dd($request->all());
+        // $result = Professional::where('professionals.expertise',$request->exprt)
+        // ->Where('professionals.language','LIKE', '%'.$request->lang.'%')
+        //  ->Where('professionals.availability_days','LIKE', '%'.$request->day.'%')
+        // ->Where('professionals.availability_time','LIKE', '%'.$request->time.'%')
+        // ->leftJoin('users','users.id','=','professionals.user_id')
+        // ->paginate(2);
+        // $res=$prof->count();
+        // dd($prof);
+       // $pagi=$prof->paginate(5);
+       // return view('employee.load_professionals',compact('result'));
+
+
+    }
+
+    public function tokens(){
+        $result= User::where('users.id', Auth::user()->id)->join('employees', 'employees.user_id','=','users.id')
+        ->get()->first();
+       // $data=Token_use::where('user_id', Auth::user()->id)->dd();
+       $data=Token_use::select(DB::raw("SUM(request_token) as req_tok,SUM(tokens) as tok"))
+                                ->where('user_id', Auth::user()->id)
+                               ->orderBy("created_at")
+                               ->groupBy('user_id')
+                               ->get()->first();
+
+       // dd($data);
+        return view('employee.tokens', compact('result','data'));
+    }
+
+    public function tokens_raise(Request $request){
+       // dd($request->all());
+
+        $tokens_use= new Token_use();
+        $tokens_use->user_id = Auth::user()->id;
+        $tokens_use->unique_company_code = Auth::user()->unique_company_code;
+        $tokens_use->request_token = $request->token;
+        $tokens_use->save();
+
+        $result= User::where('unique_company_code', Auth::user()->unique_company_code)
+        ->where('role', 'Employer')
+        ->where('status', '1')
+        ->where('left_tokens','>', 0)
+        ->leftJoin('employers', 'employers.user_id', 'users.id')
+        ->first();
+       // dd($result);
+
+        $email=$result->email;
+        $token=$request->token;
+        $data= array(
+            'token'=>$token,
+            'r_name'=>$result->name,
+            'name'=>Auth::user()->name,
+            'email'=>Auth::user()->email,
+            'empcode'=>Auth::user()->employee_id,
+            'company'=>$result->company_name,
+            'role'=>$result->job_role,
+            'compid'=>$result->unique_company_code,
+            'msg' => "Please provide Token !!",
+
+        );
+        $user['to']=$email;
+        Mail::send('emailtemplates.token',$data,function($message) use ($user){
+            $message->to($user['to']);
+            $message->subject('Raise Token Request');
+        });
+
+    }
+    public function profile(){
+        $result= User::where('users.id', Auth::user()->id)->join('employees', 'employees.user_id','=','users.id')
+        ->get()->first();
+        return view('employee.profile', compact('result'));
+    }
+    public function index()
+    {
+        $id = Auth::user()->id;
+        $result = User::where('users.id', $id)->join('employees', 'employees.user_id', '=', 'users.id')->get()->first();
+        return view('employee.index', compact('result'));
+    }
+    public function profile_update(Request $request)
+    {
+        $res1=User::where('id',Auth::user()->id)->update(['phone'=>$request->phone]);
+        $data= array(
+            'birth_year'=>$request->birth_year,
+            'gender'=>$request->gender,
+            'country'=>$request->country,
+            'address'=>$request->address,
+        );
+        $res2=Employee::where('user_id',Auth::user()->id)->update($data);
+
+        if($res1 && $res2)
+        {
+            return redirect()->back()->with('success', '!! Profile is updated successfully !!');
+        }
+    }
+
+    public function suggestion($uid)
+    {
+        $result = User::where('uid', $uid)->first();
+        return view('employee.suggestion', compact('result'));
+    }
+    public function save_suggestion(Request $request)
+    {
+       // dd($request->all());
+        $user_id = $request->user_id;
+        $result=User::where('id',$user_id)->update(['status'=>'1']);
+        $data = array(
+            'total_family_member' => $request->total_family_member,
+            'remotely_work' => $request->remotely_work,
+            'seeking_help' => $request->seeking_help,
+            'illness_disablity' => $request->illness_disablity,
+            'providing_care' => $request->providing_care,
+            'mental_wellness' => $request->mental_wellness,
+            'physical_wellness' => $request->physical_wellness,
+            'household_service' => $request->household_service,
+            'language_preferred' => $request->language_preferred,
+            'preferred_appointment' => $request->preferred_appointment,
+            'suitable_day' => $request->suitable_day,
+            'preferred_time' => $request->preferred_time,
+            'preferred_time_slot' => $request->preferred_time_slot,
+        );
+        $res=Employee::where('user_id',$user_id)->update($data);
+
+        if($result && $res){
+            return redirect()->route('employee.professional.lists')->with('success', '!! Employee logged in !!');
+        }
+    }
+
+    public function professional_details(Request $req){
+        
+        $uuid = $req->segment(3);
+        $query = User::query();
+        $query->select('t1.id', 't1.name', 't2.gender','t2.address'); // get desired data from tables
+        $query->from('users as t1');
+        $query->leftJoin('professionals as t2', 't1.id', '=', 't2.user_id');
+        $query->where('t1.uid', $uuid);
+        $data = $query->first();
+        // print_r($data);
+
+        return view('employee.professional-details', compact('data'));
+        
+
+        
+    }
+
+    public function appointments(){
+        $userId = Auth::user()->id;
+        return view('employee.appointments');
+    }
+
+
+
+    public function logout(Request $request){
+        try{
+            auth()->logout();
+            return redirect()->route('employee.login');
+        }catch(\Exception $e){
+            return $e->getMessage();
+        }
+    }
+
+
+
+}
