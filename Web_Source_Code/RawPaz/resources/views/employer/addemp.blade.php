@@ -32,7 +32,7 @@
                                 <div class="dasp_grap">
                                     <div class="emp_progr brd_btm ">
                                         <div class="prigress-bar">
-                                            <span class="credits_txt">You have {{ $result->tokens }} Tokens</span>
+                                            <span class="credits_txt">You have {{ $result->tokens }} Credits</span>
                                             <div role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="{{ $result->tokens }}" style="--value:{{ $result->left_tokens }}"></div>
                                             <span>Upgrade Now </span>
                                         </div>
@@ -81,9 +81,9 @@
                                                     <div class="row">
                                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                                             <div class="frm_grp select_icon">
-                                                                <label for="">Allocate Tokens</label>
+                                                                <label for="">Allocate Credits</label>
                                                                 <select class="form-control" name="token">
-                                                                    <option value="">Token</option>
+                                                                    <option value="">Select</option>
                                                                     <option value="1" {{ ( '1' == old('token')) ? 'selected' : '' }}>1</option>
                                                                     <option value="2" {{ ( '2' == old('token')) ? 'selected' : '' }}>2</option>
                                                                     <option value="3" {{ ( '3' == old('token')) ? 'selected' : '' }}>3</option>
@@ -230,7 +230,7 @@
 
                                                         <!--  -->
 
-                                                        <div class="tok_no">Tokens: {{ $tkn }}</div>
+                                                        <div class="tok_no">Credits: {{ $tkn }}</div>
                                                     </div>
                                                 </div>
                                                 </div>
@@ -253,14 +253,14 @@
                                                                         </svg>
                                                                     </span>
                                                                 </button>
-                                                                <h3>Approved Tokens</h3>
+                                                                <h3>Approved Credits</h3>
                                                                 <form action="{{ route('employer.tokens.sent') }}" method="post">
                                                                     @csrf
 
                                                                     <input type="hidden" name="uid" value="{{$emp->uid}}">
 
                                                                     <div class="frm_grp select_icon">
-                                                                        <label for="">Tokens counts</label>
+                                                                        <label for="">Credits counts</label>
                                                                         <select class="form-control" name="token">
                                                                             <option value="1">1</option>
                                                                             <option value="2">2</option>
@@ -381,7 +381,7 @@
                         $("#add_emp").hide();
                     });
                     $(".tokns").click(function(){
-                        alert("You have Token, so we cann't add more !!");
+                        alert("You have Credit, so we cann't add more !!");
                     });
                 });
                 function EmployeeStatus(ID,Status)

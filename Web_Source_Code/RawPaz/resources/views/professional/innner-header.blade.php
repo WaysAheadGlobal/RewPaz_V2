@@ -91,7 +91,7 @@
                                     <li><a class="dropdown-item" href="{{ route('professional.profile') }}">Profile</a></li>
                                     <li><a class="dropdown-item" href="{{ route('professional.appointments') }}">Appointments</a></li>
                                     <li><a class="dropdown-item" href="{{route('professional.chatroom')}}">Chat room</a></li>
-                                    <li><a class="dropdown-item" href="{{route('professional.tokens')}}">Tokens</a></li>
+                                    <li><a class="dropdown-item" href="{{route('professional.tokens')}}">Credits</a></li>
                                     <li><a class="dropdown-item" href="{{route('professional.earning')}}">Earnings</a></li>
                                     <li><a class="dropdown-item" href="{{route('professional.feedbacks')}}">Feedbacks</a></li>
                                     <li><a class="dropdown-item" href="{{ route('professional.notification') }}">Notifications</a></li>
@@ -205,7 +205,7 @@
                   <path d="M12.0252 3.13672C12.9393 3.13672 13.6867 3.85028 13.7408 4.75077L13.744 4.85547V10.1711C13.744 11.0852 13.0304 11.8326 12.1299 11.8868L12.0252 11.8899H2.97656C2.06248 11.8899 1.31506 11.1763 1.26095 10.2758L1.25781 10.1711V4.85547C1.25781 3.94139 1.97138 3.19397 2.87186 3.13986L2.97656 3.13672H12.0252ZM12.8059 6.87047H2.19469L2.19531 10.1711C2.19531 10.5757 2.50273 10.9084 2.89668 10.9484L2.97656 10.9524H12.0252C12.4297 10.9524 12.7624 10.645 12.8024 10.251L12.8065 10.1711L12.8059 6.87047ZM11.409 9.06128C11.6679 9.06128 11.8777 9.27114 11.8777 9.53003C11.8777 9.76734 11.7014 9.96346 11.4726 9.9945L11.409 9.99878H9.84647C9.58759 9.99878 9.37772 9.78891 9.37772 9.53003C9.37772 9.29272 9.55407 9.09659 9.78287 9.06556L9.84647 9.06128H11.409ZM12.0252 4.07422H2.97656C2.57206 4.07422 2.23935 4.38164 2.19935 4.77559L2.19531 4.85547L2.19469 5.93297H12.8059L12.8065 4.85547C12.8065 4.45096 12.499 4.11826 12.1051 4.07825L12.0252 4.07422Z" fill="white"/>
                 </svg>
               </span>
-              <span class="menu-title">Tokens</span>
+              <span class="menu-title">Credits</span>
             </a>
           </li>
           <li class="nav-item">

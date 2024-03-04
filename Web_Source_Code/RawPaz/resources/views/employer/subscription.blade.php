@@ -39,7 +39,7 @@
 
                         <h3>{{ $p->name }} Package</h3>
                         <h4>${{ $p->price }} </h4>
-                        <p>{{ $p->token }}  Tokens (${{ $p->price/$p->token }}/Token)</p>
+                        <p>{{ $p->token }}  Credits (${{ $p->price/$p->token }}/Token)</p>
                         @php
                         $slug1= $p->slug;
                         @endphp

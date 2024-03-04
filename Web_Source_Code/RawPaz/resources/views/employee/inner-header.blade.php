@@ -134,7 +134,7 @@
                                 <li><a class="dropdown-item" href="{{ url('employee/professionals') }}">Professionals</a></li>
                                 <li><a class="dropdown-item" href="{{ url('employee/appointments') }}">Appointments</a></li>
                                 <li><a class="dropdown-item" href="{{ url('employee/chat-room') }}">Chats</a></li>
-                                <li><a class="dropdown-item" href="{{ route('employee.tokens') }}">Tokens</a></li>
+                                <li><a class="dropdown-item" href="{{ route('employee.tokens') }}">Credits</a></li>
                                 <li><a class="dropdown-item" href="{{ route('employee.notification') }}">Notifications</a></li>
                                 <li><a class="dropdown-item" href="{{ route('employee.logout') }}">Logout</a></li>
                             </ul>
@@ -249,7 +249,7 @@
                                             <path d="M12.7166 8.49294C12.601 8.49143 12.4906 8.44488 12.4088 8.36315C12.3271 8.28143 12.2806 8.171 12.2791 8.05544V6.03711C12.2791 5.92108 12.3251 5.8098 12.4072 5.72775C12.4892 5.6457 12.6005 5.59961 12.7166 5.59961C12.8326 5.59961 12.9439 5.6457 13.0259 5.72775C13.108 5.8098 13.1541 5.92108 13.1541 6.03711V8.05544C13.1541 8.1129 13.1427 8.16978 13.1207 8.22286C13.0988 8.27594 13.0666 8.32418 13.0259 8.36478C12.9853 8.40544 12.9371 8.43764 12.884 8.45963C12.8309 8.48163 12.774 8.49294 12.7166 8.49294Z" fill="white"/>
                                           </svg>
                                     </span>
-                                    <span class="menu-title"> Tokens</span>
+                                    <span class="menu-title"> Credits</span>
                                 </a>
                             </li>
                             <li class="nav-item">

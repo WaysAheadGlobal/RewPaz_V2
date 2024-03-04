@@ -39,7 +39,7 @@
                                                         
                                                             <h3>{{ $res->name }}</h3>
                                                             <h4>Subscription</h4>
-                                                            <p>{{ $res->features }} Price ${{ $res->price }}<br> Tokens ({{ $res->token }}) </p>
+                                                            <p>{{ $res->features }} Price ${{ $res->price }}<br> Credits ({{ $res->token }}) </p>
                                                             <a href="{{url('/employer/payment-page').'/'.$res->id}}" class="btn">Pay Now</a>
                                                         
 

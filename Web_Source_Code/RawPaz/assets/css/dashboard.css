@@ -2,6 +2,7 @@
 .banner_home.form_sect .banner_sect {background: #fff;height: 100vh;}
 .banner_home.form_sect .sign_form { height: 100vh;width: 50%;background: #FFF;box-shadow: -3px 4px 8px 0px rgba(172, 160, 160, 0.25);padding: 35px 60px;}
 .logo_head {position: absolute;top: 20px;left: 60px;}
+.logo_head img{width:10%;height:auto;}
 .banner_home.form_sect .left_banner {position: initial;}
 .banner_home.form_sect .sign_form .heading_sign a {
     display: block;
@@ -2537,8 +2538,8 @@ button.wallet_btn {
 
 .box_card_rgt .prof_list .card_bx .img_bx img {
   border-radius: 6.72px;
-  width: 253px;
-  height: 140px;
+  width: 150px;
+  /* height: 140px; */
 }
 
 .box_card_rgt .prof_list .card_bx .cont_bx {width: 100%;margin-left: 20px;}
@@ -2769,13 +2770,13 @@ footer.footer.inner_footer {
 }
 
 .full-details .card_bx .img_bx {
-  margin: -10px;
+  /* margin: -10px; */
   margin-right: 0;
 }
 
 .full-details .card_bx .img_bx img {
-  width: 390px;
-  height: 361px;
+  width: 100%;
+  height: auto;
 }
 
 .full-details .card_bx .cont_details {
@@ -3168,8 +3169,8 @@ background: rgba(198, 16, 0, 0);
 
 .list_prof_point .video_bx .image {
   position: relative;
-  width: 386px;
-  height: 264px;
+  width: 100%;
+  height: auto;
 }
 
 .iconfont-wrapper {

@@ -6,7 +6,7 @@
     <div class="col-sm-12">
       <div class="dashboard_rgt">
         <div class="heading_bx">
-          <h3>Tokens</h3>
+          <h3>Credits</h3>
         </div>
         <div class="dasp_grap">
           <div class="row">

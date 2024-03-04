@@ -217,7 +217,7 @@
                                                 fill="white" />
                                         </svg>
                                     </span>
-                                    <span class="menu-title">Token Utilization</span>
+                                    <span class="menu-title">Credit Utilization</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -230,7 +230,7 @@
                                                 fill="white" />
                                         </svg>
                                     </span>
-                                    <span class="menu-title">Token Requested</span>
+                                    <span class="menu-title">Credit Requested</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -243,7 +243,7 @@
                                                 fill="white" />
                                         </svg>
                                     </span>
-                                    <span class="menu-title">Token Assigned</span>
+                                    <span class="menu-title">Credit Assigned</span>
                                 </a>
                             </li>
                             <li class="nav-item">

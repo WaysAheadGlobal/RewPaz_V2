@@ -5,33 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RewPaz</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css')}}" rel="stylesheet">
+    <title>RewPaz-Blog</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
-    <link rel='stylesheet' href='asset/css/froala_editor.pkgd.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_style.min.css'>
-
-    <link rel="stylesheet" href="{{asset('asset/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/owl-carousel.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/lightbox.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/animate.css')}}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/owl.carousel.css')}}">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel="stylesheet" href="{{asset('assets/Home/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/responsive.css')}}">
 
+    <link rel="stylesheet" href="{{asset('assets/Home/css/responsive.css')}}">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NPE02SHZTH');
+    </script>
 </head>
 
 <body>
 <header class="header_top head_inner">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="{{asset('asset/images/logo.png')}}" alt="">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="{{asset('assets/images/logo.svg')}}" alt="" >
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -61,9 +70,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="{{ url('/community') }}">Community</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="btn_grp">
                         <a href="{{url('/login/employer')}}"><button class="btnLogin">
@@ -97,123 +106,180 @@
 </header>
 <!----------------------------Banner------------------------------------------->
 <section class="blog_sect">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>THINGS TO READ</h3>
-                <h4>Tips to Help You Design Your Mental Health <br>
-                    Benefits Support</h4>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12">
-                <div class="blog_details">
-                    <div class="img_post">
-                        <img src="{{asset('asset/images/blog_banner.png')}}" alt="">
-                    </div>
-                    <div class="date_post">
-                       <p><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08333C6.53183 2.08333 2.08333 6.53183 2.08333 12C2.08333 17.4682 6.53183 21.9167 12 21.9167C17.4682 21.9167 21.9167 17.4682 21.9167 12C21.9167 6.53183 17.4682 2.08333 12 2.08333ZM12 23.6667C5.567 23.6667 0.333332 18.433 0.333332 12C0.333332 5.567 5.567 0.333328 12 0.333328C18.433 0.333328 23.6667 5.567 23.6667 12C23.6667 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0031 16.3078C15.8502 16.3078 15.6962 16.2682 15.5551 16.1853L11.1567 13.5615C10.8931 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0889 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8664 14.9289 17.0029 15.4655 16.7556 15.8808C16.5911 16.155 16.3006 16.3078 16.0031 16.3078Z" fill="#6C6C6C"/>
-                      </svg></span><span>16, Aug 2023</span></p>
-
-
-                    </div>
-                    <div class="head_subtitle">
-                        <p>Supporting caregiver emotional well-being and prosperity today requests another degree of figuring out, receptiveness, and purposefulness.</p>
-
-                    </div>
-                    <div class="head_post">
-                        <h3>Perceive association is important for their psychological prosperity (and it additionally drives commitment)</h3>
-                    </div>
-                    <div class="post_descrip">
-                        <p>With remote/hybrid work, a great deal of representatives are longing for association at this moment. Depression is a developing psychological well-being issue. Numerous representatives used to get the greater part of their social associations in the work environment. It's critical to perceive that building social association is likewise essential for guaranteeing representative mental prosperity.</p>
-
-                    </div>
-                    <div class="head_post">
-                        <h3>Look past your EAP with regards to supporting emotional well-being in the work environment</h3>
-                    </div>
-                    <div class="post_descrip">
-                        <p>By and large, EAPs have never felt adequate. Indeed, even trying to say the word EAP, it's difficult to get purchases from representatives. Conventional EAPs are underutilized yet need to find more imaginative arrangements. There are some phenomenal raised EAPs on the lookout and you can add preventive sites like RewPaz to supplement your EAP and drive higher commitment to your psychological wellness assets.</p>
-
-                    </div>
-                    <div class="head_post">
-                        <h3>Deliver mental well-being for the whole employee life experience</h3>
-                    </div>
-                    <div class="post_descrip">
-                        <p>It's not just about viewing at your labor force overall, yet also considering every person to be an entire individual. At RewPaz, we're assisting clients with grasping the entire experience of representatives: their social determinants of wellbeing and every one of the variables that might be adding or reducing their prosperity.</p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12">
-                <div class="blog_list">
-                    <div class="card_bx active">
-                        <div class="img_bx">
-                            <img src="{{asset('asset/images/blog_thump.png')}}" alt="">
-                        </div>
-                        <div class="cont_bx">
-                            <h3>Tips to Help You Design Your Mental Health Benefits Support</h3>
-                            <p>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
-                              </svg></span>
-                              <span>16, Aug 2023</span></p>
-
-                        </div>
-
-                    </div>
-                    <div class="card_bx">
-                        <div class="img_bx">
-                            <img src="{{asset('asset/images/blog_thump1.png')}}" alt="">
-                        </div>
-                        <div class="cont_bx">
-                            <h3>The Transformative Power of Meditation: Cultivating Inner Harmony</h3>
-                            <p>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
-                              </svg></span>
-                              <span>16, Aug 2023</span></p>
-
-                        </div>
-
-                    </div>
-                    <div class="card_bx">
-                        <div class="img_bx">
-                            <img src="{{asset('asset/images/blog_thump2.png')}}" alt="">
-                        </div>
-                        <div class="cont_bx">
-                            <h3>Empower Your Journey: The Path to Self-Help and Personal Growth</h3>
-                            <p>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
-                              </svg></span>
-                              <span>16, Aug 2023</span></p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="btn_back">
-                    <button class="btn">Back</button>
-
-                </div>
-
-            </div>
-
-        </div>
-
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h3>RewPaz  Education</h3>
+            <h4>How to deal with anxiety during your work.</h4>
+         </div>
+      </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 ">
+            <div class="blog_details">
+               <div class="img_post">
+                  <img src="{{asset('asset/images/blog_banner.png')}}" alt="">
+               </div>
+               <div class="date_post">
+                  <p>
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08333C6.53183 2.08333 2.08333 6.53183 2.08333 12C2.08333 17.4682 6.53183 21.9167 12 21.9167C17.4682 21.9167 21.9167 17.4682 21.9167 12C21.9167 6.53183 17.4682 2.08333 12 2.08333ZM12 23.6667C5.567 23.6667 0.333332 18.433 0.333332 12C0.333332 5.567 5.567 0.333328 12 0.333328C18.433 0.333328 23.6667 5.567 23.6667 12C23.6667 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0031 16.3078C15.8502 16.3078 15.6962 16.2682 15.5551 16.1853L11.1567 13.5615C10.8931 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0889 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8664 14.9289 17.0029 15.4655 16.7556 15.8808C16.5911 16.155 16.3006 16.3078 16.0031 16.3078Z" fill="#6C6C6C"/>
+                        </svg>
+                     </span>
+                     <span>29, Feb 2024</span>
+                  </p>
+               </div>
+               <div class="head_subtitle">
+                  <p>Dealing with anxiety during work can be challenging, but there are effective strategies you can employ to manage and alleviate these feelings. </p>
+               </div>
+               <div class="head_post">
+                  <h3>Firstly, it's essential to recognize the signs of anxiety, such as racing thoughts, restlessness, or physical tension.</h3>
+               </div>
+               <div class="post_descrip">
+                  <p>With remote/hybrid work, a great deal of representatives are longing for association at this moment. Depression is a developing psychological well-being issue. Numerous representatives used to get the greater part of their social associations in the work environment. It's critical to perceive that building social association is likewise essential for guaranteeing representative mental prosperity.</p>
+                  <p>Additionally, organizing and prioritizing tasks can help alleviate feelings of overwhelm. Create a to-do list, breaking down larger projects into smaller, more manageable steps. Setting realistic goals and deadlines can provide structure and a sense of accomplishment as you make progress throughout the day.</p>
+                  <p>Furthermore, establishing boundaries between work and personal life is crucial for managing anxiety. Take regular breaks, step away from your desk, and engage in activities that promote relaxation and stress relief. Whether it's going for a walk, practicing a hobby, or spending time with loved ones, incorporating these activities into your routine can help maintain balance and perspective.</p>
+                  <p>Seeking support from colleagues or a trusted supervisor can also be beneficial. Sometimes, simply talking about your feelings with someone who understands can provide reassurance and perspective. Additionally, consider reaching out to a mental health professional for further guidance and support if anxiety persists or significantly impacts your ability to function at work.</p>
+                  <p>Remember, it's okay to prioritize your mental health and take steps to manage anxiety during work. By implementing these strategies and seeking support when needed, you can effectively cope with anxiety and thrive in your professional environment.</p>
+               </div>
+               <div class="head_post">
+                  <h3>Valuable Tips for caregivers at home.</h3>
+               </div>
+               <div class="post_descrip">
+                  <p>Caring for a loved one at home can be a rewarding yet challenging responsibility. Here are some essential pieces of advice for caregivers:</p>
+                  
+                     <p><b>1. Self-care is Paramount: </b>Remember to prioritize your own well-being. You cannot effectively care for someone else if you are physically or emotionally depleted. Set aside time for activities that recharge you, seek support from friends and family, and consider joining a caregiver support group.</p>
+                     <p><b>2. Educate Yourself:</b> Learn as much as you can about the condition or illness your loved one is facing. Understanding their needs, symptoms, and treatment options will help you provide better care and communicate effectively with healthcare professionals.</p>
+                     <p><b>3. Establish a Routine: </b>Consistency can provide a sense of stability for both you and your loved one. Establish a daily routine for meals, medication, activities, and rest to help manage their condition and reduce stress.</p>
+                     <p><b>4. Communicate Openly:</b> Maintain open and honest communication with your loved one about their care preferences, concerns, and feelings. Encourage them to express themselves and actively listen to their needs.</p>
+                     <p><b>5. Seek Outside Help:</b> Don't hesitate to ask for assistance when needed. Whether it's from other family members, friends, or professional caregivers, accepting help can lighten your load and prevent burnout.</p>
+                     <p><b>6. Create a Safe Environment: </b>Ensure the home is safe and accessible for your loved one. Remove hazards, install grab bars or handrails if necessary, and consider assistive devices to aid with mobility or daily tasks.</p>
+                     <p><b>7. Stay Organized:</b> Keep track of medications, appointments, and important documents to prevent confusion and ensure continuity of care.</p>
+                     <p><b>8. Take Breaks: </b>Taking breaks from caregiving to rest and recharge is okay. Consider respite care options to provide temporary relief and prevent caregiver fatigue.</p>
+                     <p><b>9.Be Patient and Flexible: </b>Understand that caregiving can be unpredictable, and patience is vital. Adapt to changes in your loved one's condition and be flexible with your caregiving approach.</p>
+                     <p><b>10 Celebrate Small Victories: </b>Acknowledge and celebrate the progress and achievements, no matter how small. Finding joy and gratitude in everyday moments can help sustain you through the challenges of caregiving.</p>
+                  
+               </div>
+               <div class="head_post">
+                  <h3>Are you being new to a country? Take care of your mental health.</h3>
+               </div>
+               <div class="post_descrip">
+                  <p>Being new in a country poses several challenges to mental health, stemming from various sources such as cultural differences, language barriers, social isolation, and acculturative stress. One significant challenge is the feeling of disconnection from one's familiar support system—friends, family, and community—which can lead to feelings of loneliness and homesickness. Moreover, navigating a new cultural and social environment can induce stress and anxiety, especially when norms and customs differ significantly from one's own.</p>
+                  <p>Language barriers exacerbate these challenges, hindering effective communication with others, accessing healthcare services, and understanding essential information related to mental health support. This linguistic obstacle can lead to feelings of frustration, helplessness, and isolation, further impacting one's mental well-being.</p>
+                  <p>Additionally, acculturative stress arises from the process of adapting to a new culture, including adjusting to new societal norms, values, and expectations. This stress can manifest in various ways, such as identity confusion, discrimination, and a sense of not belonging, all of which contribute to mental health concerns like depression, anxiety, and low self-esteem.</p>
+                  <p> Furthermore, unfamiliarity with the local mental health system and available resources may deter individuals from seeking help when needed, leading to untreated mental health issues and exacerbating the situation.</p>
+                  <p>Overall, being new in a country can significantly impact mental health due to a combination of social, cultural, linguistic, and systemic factors. Addressing these challenges requires comprehensive support systems that provide culturally sensitive mental health services, language assistance, community integration programs, and resources to promote well-being and resilience among newcomers.</p>
+               </div>
+               <div class="head_post">
+                  <h3>How do you deal with a demanding and uncomprehending boss?</h3>
+               </div>
+               <div class="post_descrip">
+                  <p>Dealing with a demanding and unsympathetic boss can be challenging, but there are strategies to navigate this situation effectively while maintaining your well-being and professionalism.</p>
+                  <p>Firstly, it's essential to maintain clear communication with your boss. Clearly understand their expectations and priorities, and seek clarification if needed. Regularly update them on your progress and accomplishments to demonstrate your commitment and diligence. </p>
+                  <p>Secondly, try to anticipate your boss's needs and preferences to address them proactively. Anticipating their demands can help you stay ahead of the curve and mitigate potential conflicts or misunderstandings. </p>
+                  <p>Thirdly, cultivate resilience and emotional intelligence to manage your reactions to your boss's behavior. Practice mindfulness techniques to stay calm and composed in stressful situations, and develop assertiveness skills to respectfully express your concerns or boundaries. </p>
+                  <p>Moreover, focus on your own performance and professional development. Concentrate on delivering high-quality work and exceeding expectations, regardless of your boss's demeanor. Investing in your skills and expertise can also provide you with opportunities for growth and advancement, opening doors to other career options if necessary. </p>
+                  <p>Additionally, seek support from trusted colleagues, mentors, or a support network outside of work. Venting frustrations and seeking advice from others who have dealt with similar situations can provide perspective and validation. </p>
+                  <p>If the situation becomes untenable despite your efforts, consider discussing your concerns with HR or higher-level management, especially if your boss's behavior crosses ethical or legal boundaries. However, approach this step carefully and with documentation to support your claims. </p>
+                  <p>Ultimately, remember to prioritize your well-being and mental health. If the situation becomes too toxic or detrimental to your health, explore other employment opportunities where you can thrive in a more supportive and empathetic environment. </p>
+               </div>
+               <div class="head_post">
+                  <h3>I am too worried about everything: work, kids, money, relatives. How can I sleep?</h3>
+               </div>
+               <div class="post_descrip">
+                  <p>Dealing with overwhelming worry about various aspects of life, such as work, family, finances, and relationships, can significantly impact your ability to sleep. However, implementing effective strategies to manage your worries can help promote better sleep hygiene and overall well-being. </p>
+                  <p>Firstly, establish a consistent bedtime routine to signal to your body that it's time to wind down and prepare for sleep. This routine may include relaxing activities like reading, taking a warm bath, or practicing mindfulness or meditation techniques to calm your mind. </p>
+                  <p>Secondly, practice stress management techniques throughout the day to alleviate anxiety and worries before bedtime. Engage in regular exercise, which can help reduce stress hormones and promote better sleep quality. Additionally, incorporate relaxation exercises, such as deep breathing or progressive muscle relaxation, into your daily routine to induce a state of relaxation and ease tension. </p>
+                  <p>Moreover, prioritize tasks and responsibilities to avoid feeling overwhelmed by a seemingly endless to-do list. Break tasks into smaller, manageable steps and delegate when possible to alleviate some of the pressure. </p>
+                  <p>Furthermore, create a worry journal to write down your concerns and anxieties before bedtime. This process can help externalize your worries, preventing them from swirling around in your mind as you try to sleep. Additionally, jot down potential solutions or action plans for addressing your fears, empowering you to take control of the situation. </p>
+                  <p>Additionally, limit exposure to stimulating activities and electronic devices before bedtime, as they can interfere with your body's natural sleep-wake cycle. Instead, create a calming sleep environment by dimming lights, reducing noise, and keeping your bedroom cool and comfortable. </p>
+                  <p>Finally, if worries persist and significantly impact your daily functioning and sleep quality, consider seeking support from a mental health professional. Therapy or counseling can provide you with coping strategies and support to manage your worries more effectively and improve your overall well-being. </p>
+               </div>
+               <div class="head_post">
+                  <h3>You are living with someone with cancer.</h3>
+               </div>
+               <div class="post_descrip">
+                  <p>Living with someone who has cancer can be emotionally challenging and requires a supportive and understanding approach. Here are some key aspects to consider: </p>
+                  <p>Firstly, communication is vital. Open and honest communication allows both the person with cancer and their loved ones to express their feelings, concerns, and needs. Creating a safe space where everyone feels heard and supported is essential. </p>
+                  <p>Secondly, educate yourself about the type of cancer your loved one has, as well as its treatment options and potential side effects. Understanding their condition can help you provide better support and assist them in navigating their treatment journey. </p>
+                  <p>Thirdly, offer practical assistance with daily tasks and responsibilities. This could include helping with household chores, providing transportation to medical appointments, or coordinating meals and medication schedules. </p>
+                  <p>Moreover, prioritize self-care for both yourself and the person with cancer. Encourage them to maintain healthy habits, such as eating well, staying physically active (if possible), and getting enough rest. Additionally, make time for activities that bring joy and relaxation to help alleviate stress and anxiety. </p>
+                  <p>Furthermore, be empathetic and patient. Understand that living with cancer can be emotionally taxing, and there may be times when your loved one feels overwhelmed or frustrated. Please offer your support and reassurance, and let them know that expressing their emotions is okay. </p>
+                  <p>Lastly, seek support from friends, family, or support groups. Sharing your experiences with others who are going through similar challenges can provide comfort, guidance, and a sense of community. </p>
+                  <p>Overall, living with someone with cancer requires compassion, patience, and understanding. By fostering open communication, offering practical assistance, prioritizing self-care, and seeking support, you can help create a supportive environment for your loved ones as they navigate their cancer journey. </p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4">
+            <div class="blog_list">
+               <div class="card_bx active">
+                  <div class="img_bx">
+                     <img src="{{asset('asset/images/blog_thump.png')}}" alt="">
+                  </div>
+                  <div class="cont_bx">
+                     <h3>Tips to Help You Design Your Mental Health Benefits Support</h3>
+                     <p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
+                           </svg>
+                        </span>
+                        <span>29, Feb 2024</span>
+                     </p>
+                  </div>
+               </div>
+               <div class="card_bx">
+                  <div class="img_bx">
+                     <img src="{{asset('asset/images/blog_thump1.png')}}" alt="">
+                  </div>
+                  <div class="cont_bx">
+                     <h3>The Transformative Power of Meditation: Cultivating Inner Harmony</h3>
+                     <p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
+                           </svg>
+                        </span>
+                        <span>29, Feb 2024</span>
+                     </p>
+                  </div>
+               </div>
+               <div class="card_bx">
+                  <div class="img_bx">
+                     <img src="{{asset('asset/images/blog_thump2.png')}}" alt="">
+                  </div>
+                  <div class="cont_bx">
+                     <h3>Empower Your Journey: The Path to Self-Help and Personal Growth</h3>
+                     <p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
+                           </svg>
+                        </span>
+                        <span>29, Feb 2024</span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="btn_back">
+               <button class="btn">Back</button>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>
 
 <footer class="footer">
@@ -271,16 +337,16 @@
                     <h3 class="heading_ft">Menu</h3>
                     <ul>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="{{ url('/') }}#About_tab">About us</a>
                         </li>
                         <li>
-                            <a href="#">Pricing plans</a>
+                            <a href="{{ url('/') }}#Pricing_tab">Pricing plans</a>
                         </li>
                         <li>
-                            <a href="#">Our team</a>
+                            <a href="{{ url('/') }}#Team_tab">Our team</a>
                         </li>
                         <li>
-                            <a href="#">Group therapy</a>
+                            <a href="{{ url('/') }}#Testimonial_tab">Testimonials</a>
                         </li>
                     </ul>
 
@@ -291,16 +357,16 @@
                     <h3 class="heading_ft">Company</h3>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="{{url('privacy-policy')}}">Privacy & Policy</a>
                         </li>
                         <li>
-                            <a href="#"> Our services</a>
+                            <a href="{{ url('/') }}#Services_tab"> Our services</a>
                         </li>
                         <li>
-                            <a href="#"> FAQs</a>
+                            <a href="{{ url('/') }}#FAQs_tab"> FAQs</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="{{url('contact')}}">Contact Us</a>
                         </li>
                     </ul>
 
@@ -413,6 +479,27 @@ MARKHAM, ON, CA, L3R 9W9</span></a>
           }
         })(jQuery);
       </script>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65df19e78d261e1b5f6688dd/1hnnnqchk';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- <iframe 
+        title="chat-bot" 
+        src="https://testapi.unomiru.com/api/Waysbot?bot=rewpaz" 
+        frameborder="0" width="50%" height="100%"
+        allow="microphone;"        
+        style="height: 90svh; position: fixed; right: 0; bottom: 10px; width: 27rem; z-index: 9;"
+    ></iframe> -->
 </body>
 
 </html>

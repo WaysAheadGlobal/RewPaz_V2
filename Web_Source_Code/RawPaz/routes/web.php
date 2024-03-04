@@ -30,6 +30,15 @@ Route::get('/blog', function () {
 Route::get('/community', function () {
     return view('community');
 });
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+Route::get('/privacy-policy', function () {
+    return view('privacy');
+})->name('privacy');
+
+Route::post('sendbasicemail',[HomeController::class, 'basic_email'])->name('basic.email');
+
 /** =======================================    Employer Module Start   ================================================ */
 
 

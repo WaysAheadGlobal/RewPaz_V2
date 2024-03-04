@@ -349,7 +349,7 @@
 
                                                     </div>
                                                     <div class="crd_grap">
-                                                        <p>Total Tokens</p>
+                                                        <p>Total Credits</p>
                                                         <h3>{{ $total_tok }}</h3>
                                                         <h4>By
                                                             Employer</h4>
@@ -368,21 +368,21 @@
                                                         <p>Total Bronze Plans</p>
                                                         <h3>{{ $total_sub_b }}</h3>
                                                         <h4>Amount: $ {{ number_format(7500*$total_sub_b) }}</h4>
-                                                            <p><span></span><span>Tokens: {{ 100*$total_sub_b }}</span></p>
+                                                            <p><span></span><span>Credits: {{ 100*$total_sub_b }}</span></p>
 
                                                     </div>
                                                     <div class="crd_grap">
                                                         <p>Total Silver Plans</p>
                                                         <h3>{{ $total_sub_s }}</h3>
                                                         <h4>Amount: $ {{ number_format(15000*$total_sub_s) }}</h4>
-                                                            <p><span></span><span>Tokens: {{ 500*$total_sub_s }}</span></p>
+                                                            <p><span></span><span>Credits: {{ 500*$total_sub_s }}</span></p>
 
                                                     </div>
                                                     <div class="crd_grap">
                                                         <p>Total Gold Plans</p>
                                                         <h3>{{ $total_sub_g }}</h3>
                                                         <h4>Amount: $ {{ number_format(37500*$total_sub_g) }}</h4>
-                                                            <p><span></span><span>Tokens: {{ 750*$total_sub_g}}</span></p>
+                                                            <p><span></span><span>Credits: {{ 750*$total_sub_g}}</span></p>
 
                                                     </div>
 

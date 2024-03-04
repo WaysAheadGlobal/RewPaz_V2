@@ -27,7 +27,7 @@
                             </div>
                             <div class="dashboard_rgt">
                                 <div class="heading_bx">
-                                    <h3>Token Requested</h3>
+                                    <h3>Credit Requested</h3>
                                 </div>
                                 <div class="dasp_grap" >
                                     <div class="row">

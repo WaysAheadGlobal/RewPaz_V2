@@ -1,5 +1,29 @@
 @extends('employee.main')
 @section('main')
+<style>
+ .img_bx{
+        padding: 20px;
+        width: 300px;
+        height:auto;
+    }
+    .image{
+        width: 300px;
+        padding:20px;
+        height:auto;
+    }
+   /* .img_bx img{
+        width:90%;
+        height:auto;
+    }
+    .image{
+        width: 100%;
+        padding:20px;
+    }
+    .image img{
+        width:90%;
+        height:auto;
+    } */
+</style>
 <section class="prof_details_sect">
         <div class="container">
             <div class="row">
@@ -15,14 +39,20 @@
                     <div class="full-details">
                         <div class="card_bx">
                             <div class="img_bx">
-                            @if ($data->gender=='Male')
-                                     <img src="{{asset('assets/images/male.png')}}" alt="">
+                            @if ($data->profile_pic)
+                                <img src="{{ asset('/storage/app/upload/prof-doc/'.$data->profile_pic) }}" alt="" >
+
+                            @else
+                                @if ($data->gender=='Male')
+                                    <img src="{{asset('assets/images/male.png')}}" alt="">
                                 @elseif ($data->gender=='Female')
-                                     <img src="{{asset('assets/images/female.png')}}" alt="">
+                                    <img src="{{asset('assets/images/female.png')}}" alt="">
                                 @else
-                                    <img src="{{asset('assets/images/others.png')}}" alt="">
+                                <img src="{{asset('assets/images/others.png')}}" alt="">
 
                                 @endif
+                            @endif
+                           
                                 <div class="bx_hov">
                                     <h3>{{ $data->name }}</h3>
                                     <p>{{ $data->expertise }}</p>
@@ -68,14 +98,19 @@
                     <div class="list_prof_point">
                         <div class="video_bx">
                             <div class="image" >
-                            @if ($data->gender=='Male')
-                                     <img src="{{asset('assets/images/male.png')}}" alt="">
+                            @if ($data->profile_pic)
+                                <img src="{{ asset('/storage/app/upload/prof-doc/'.$data->profile_pic) }}" alt="" >
+
+                            @else
+                                @if ($data->gender=='Male')
+                                    <img src="{{asset('assets/images/male.png')}}" alt="">
                                 @elseif ($data->gender=='Female')
-                                     <img src="{{asset('assets/images/female.png')}}" alt="">
+                                    <img src="{{asset('assets/images/female.png')}}" alt="">
                                 @else
-                                    <img src="{{asset('assets/images/others.png')}}" alt="">
+                                <img src="{{asset('assets/images/others.png')}}" alt="">
 
                                 @endif
+                            @endif
                                <div class="iconfont-wrapper" id="video1">
                                <span class="play-btn"></span>
                               </div>

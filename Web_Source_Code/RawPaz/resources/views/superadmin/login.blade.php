@@ -96,7 +96,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                             </div>
                             <div class="col-sm-12">
                             <div class="text-center">
-                                <a href="#"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/images/logo.png')}}" alt="" style="width: 30%;"></a>
                             </div>
                             </div>
 

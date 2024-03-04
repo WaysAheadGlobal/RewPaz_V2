@@ -123,7 +123,7 @@
                                 <li><a class="dropdown-item" href="{{ url('employee/professionals') }}">Professionals</a></li>
                                 <li><a class="dropdown-item" href="{{ url('employee/appointments') }}">Appointments</a></li>
                                 <li><a class="dropdown-item" href="{{ url('employee/chat-room') }}">Chats</a></li>
-                                <li><a class="dropdown-item" href="{{ route('employee.tokens') }}">Tokens</a></li>
+                                <li><a class="dropdown-item" href="{{ route('employee.tokens') }}">Credits</a></li>
                                 <li><a class="dropdown-item" href="{{ route('employee.notification') }}">Notifications</a></li>
                                 <li><a class="dropdown-item" href="{{ route('employee.logout') }}">Logout</a></li>
                             </ul>

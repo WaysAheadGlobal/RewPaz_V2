@@ -81,7 +81,7 @@
                                         </li>
                                         <li>
                                             <div class="card_grap">
-                                                <h3>Total Number of Tokens</h3>
+                                                <h3>Total Number of Credits</h3>
                                                 <div class="box_grap">
                                                     <div class="grap_txt">
 
@@ -97,7 +97,7 @@
                                         </li>
                                         <li>
                                             <div class="card_grap">
-                                                <h3>Available Tokens</h3>
+                                                <h3>Available Credits</h3>
                                                 <div class="box_grap">
                                                     <div class="grap_txt">
 

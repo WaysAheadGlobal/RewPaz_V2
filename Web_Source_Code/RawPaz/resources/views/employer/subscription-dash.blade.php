@@ -52,7 +52,7 @@
 
     <h3>Subscription</h3>
     <h4>{{ $result->plan_name }}</h4>
-    <p>{{ $result->plan_description }} Tokens (${{ $result->plan_amt/$result->plan_description }}/Token)</p>
+    <p>{{ $result->plan_description }} Credits (${{ $result->plan_amt/$result->plan_description }}/Credit)</p>
 
     <div class="cstm_chbx">
         <label class="cstmcntr">Auto-Renew
@@ -67,7 +67,7 @@
 @else
     <h3>Subscription</h3>
     <h4>None</h4>
-    <p>00 Tokens </p>
+    <p>00 Credits </p>
 
     <div class="cstm_chbx">
         <label class="cstmcntr">Auto-Renew

@@ -8,7 +8,7 @@
                         <div class="col-sm-12">
                             <div class="dashboard_rgt">
                                 <div class="heading_bx">
-                                    <h3>Tokens</h3>
+                                    <h3>Credits</h3>
                                 </div>
                                 <div class="dasp_grap">
                                     <div class="table_data">
@@ -16,10 +16,10 @@
                                             <thead>
                                                <tr>
                                                 <th>S.no</th>
-                                                <th>Requested tokens</th>
-                                                <th>received Tokens</th>
-                                                <th>Used Tokens</th>
-                                                <th>Remaining Tokens</th>
+                                                <th>Requested Credits</th>
+                                                <th>received Credits</th>
+                                                <th>Used Credits</th>
+                                                <th>Remaining Credits</th>
 
                                             </tr>
                                             </thead>
@@ -32,9 +32,9 @@
                                                     <td>{{ $data->tok-$data->us_tok  }}</td>
                                                     <td>
                                                         @if ($result->tokens <= 0)
-                                                        <a href="#"  data-bs-toggle="modal" data-bs-target="#Tokens_popup">Need more tokens?</a>
+                                                        <a href="#"  data-bs-toggle="modal" data-bs-target="#Tokens_popup">Need more Credits?</a>
                                                         @else
-                                                        <a   onclick="myFunction()">Need more tokens?</a>
+                                                        <a   onclick="myFunction()">Need more Credits?</a>
                                                         @endif
 
                                                     </td>
@@ -43,7 +43,7 @@
                                         </table>
                                                     <script>
                                                         function myFunction() {
-                                                            alert("You have token so you cann't raise !!");
+                                                            alert("You have credit so you cann't raise !!");
                                                             }
                                                     </script>
                                     </div>
@@ -81,11 +81,11 @@
                             </svg>
                         </span>
                     </button>
-                    <h3>Request for Tokens</h3>
+                    <h3>Request for Credits</h3>
                     <form action="{{ route('employee.tokens.raise') }}" method="post">
                         @csrf
                         <div class="frm_grp select_icon">
-                            <label for="">Tokens counts</label>
+                            <label for="">Credits counts</label>
                             <select class="form-control" name="token">
                                 <option value="1">1</option>
                                 <option value="2">2</option>

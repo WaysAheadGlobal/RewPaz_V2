@@ -155,7 +155,7 @@ class EmployeeController extends Controller
                 return back()->with('error','Oops! OTP is incorrect!!');
             }
         }else{
-            return back()->with('error','Oops! No user exist with this Email!');
+            return back()->with('error','Oops! No user exist with this Phone!');
         }
     }
 
@@ -372,12 +372,15 @@ class EmployeeController extends Controller
     public function professional_details(Request $req){
 
         $uuid = $req->segment(3);
-        $query = User::query();
-        $query->select('t1.id as professionalId', 't1.name', 't1.uid','t1.bio', 't2.*'); // get desired data from tables
-        $query->from('users as t1');
-        $query->leftJoin('professionals as t2', 't1.id', '=', 't2.user_id');
-        $query->where('t1.uid', $uuid);
+        //print_r($uuid);exit;
+        $query = Professional::query();
+        $query->select('t1.user_id as professionalId', 't1.*', 't2.uid','t2.bio','t2.profile_pic', 't2.name'); // get desired data from tables
+       // $query->select('t1.*', 't2.*'); // get desired data from tables
+        $query->from('users as t2');
+        $query->leftJoin('professionals as t1', 't1.user_id', 't2.id');
+        $query->where('t2.uid', $uuid);
         $data = $query->first();
+       // dd($data);
 
         $feedbacks = Feedback::where('feedbacks.professional_id', $data->professionalId)
                             ->join('users', 'users.id', 'feedbacks.employee_id')

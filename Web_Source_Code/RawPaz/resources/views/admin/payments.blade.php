@@ -20,7 +20,7 @@
                                                         <th>User</th>
                                                         <th>Plan/service/charges</th>
                                                         <th>Payment mode</th>
-                                                        <th>Total Tokens</th>
+                                                        <th>Total Credits</th>
 
                                                     </tr>
                                                    </thead>

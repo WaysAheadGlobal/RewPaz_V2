@@ -27,7 +27,7 @@
                             </div>
                             <div class="dashboard_rgt">
                                 <div class="heading_bx">
-                                    <h3>Token Utilization</h3>
+                                    <h3>Credit Utilization</h3>
                                 </div>
                                 <div class="dasp_grap" >
                                     <div class="row">
@@ -65,7 +65,7 @@
                                                 </div>
                                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                                     <div class="frm_grp">
-                                                        <label for="">Token Used</label>
+                                                        <label for="">Credit Used</label>
                                                         <div class="data_txt">{{ $emp->used_token }}</div>
 
                                                     </div>

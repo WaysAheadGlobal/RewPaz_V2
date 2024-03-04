@@ -514,7 +514,7 @@ class EmployerController extends Controller
             User::where('id',Auth::user()->id)->update(['left_tokens'=>$tkn]);
             $res=User::where('users.id',Auth::user()->id)->join('employers','employers.user_id','=','users.id')->first();
             $data=array(
-                'msg' => 'Regards for the day, now you can check that we have approved your token request.',
+                'msg' => 'Regards for the day, now you can check that we have approved your credit request.',
                 'name'=> $res->company_name,
                 'email'=> $result->email,
                 'token'=> $request->token,
@@ -525,20 +525,20 @@ class EmployerController extends Controller
             $user['to']=$result->email;
             Mail::send('emailtemplates.approved-token',$data,function($message) use ($user){
                 $message->to($user['to']);
-                $message->subject('Token Request Approved');
+                $message->subject('Credit Request Approved');
             });
 
             $notification= new Notification();
             $notification->sender_id = Auth::user()->id;
             $notification->reciver_id = $result->id;
             $notification->title = 'Employee Added';
-            $notification->msg = $res->company_name.'(employer) is added token to '.$result->name.'(employee) !!';
+            $notification->msg = $res->company_name.'(employer) is added credit to '.$result->name.'(employee) !!';
             //$notification->row = $insertedUserId;
             $notification->userType = 'Employer';
             $notification->uuid = Str::uuid();;
             $notification->save();
 
-            return redirect('employer/addemp')->with('success', '!! Successfully, token is added & mail sent !!' );
+            return redirect('employer/addemp')->with('success', '!! Successfully, credit is added & mail sent !!' );
 
         }
 
@@ -685,7 +685,7 @@ class EmployerController extends Controller
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="frm_grp">
-                                <label for="">Token Used</label>
+                                <label for="">Credit Used</label>
                                 <div class="data_txt"><?php echo $emp->used_token;?></div>
 
                             </div>
@@ -723,7 +723,7 @@ class EmployerController extends Controller
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="frm_grp">
-                                <label for="">Token Used</label>
+                                <label for="">Credit Used</label>
 
                             </div>
                         </div>
@@ -902,7 +902,7 @@ class EmployerController extends Controller
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="frm_grp">
-                                <label for="">Token</label>
+                                <label for="">Credit</label>
                                 <div class="data_txt"><?php echo $emp->tokens;?></div>
 
                             </div>
@@ -934,7 +934,7 @@ class EmployerController extends Controller
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="frm_grp">
-                                <label for="">Token</label>
+                                <label for="">Credit</label>
 
                             </div>
                         </div>

@@ -27,7 +27,7 @@
                             </div>
                             <div class="dashboard_rgt">
                                 <div class="heading_bx">
-                                    <h3>Token Assigned</h3>
+                                    <h3>Credit Assigned</h3>
                                 </div>
                                 <div class="dasp_grap" >
                                     <div class="row">
@@ -58,7 +58,7 @@
                                                 </div>
                                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                                     <div class="frm_grp">
-                                                        <label for="">Tokens</label>
+                                                        <label for="">Credits</label>
                                                         <div class="data_txt">{{ $emp->tokens }}</div>
 
                                                     </div>
@@ -97,7 +97,7 @@
                         $("#add_emp").hide();
                     });
                     $(".tokns").click(function(){
-                        alert("You have Token, so we cann't add more !!");
+                        alert("You have Credit, so we cann't add more !!");
                     });
                     GetTokenAssigned();
                 });

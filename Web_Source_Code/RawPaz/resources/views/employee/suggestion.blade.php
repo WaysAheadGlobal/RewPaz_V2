@@ -111,12 +111,13 @@
                                 <span> {{ $result->name }}</span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item active" href="#">Profile</a></li>
-                                <!-- <li><a class="dropdown-item" href="#">Appointments</a></li>
-                                <li><a class="dropdown-item" href="#">Chats</a></li>
-                                <li><a class="dropdown-item" href="#">Tokens</a></li>
-                                <li><a class="dropdown-item" href="#">Notifications</a></li> -->
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="{{ route('employee.profile') }}">Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ url('employee/professionals') }}">Professionals</a></li>
+                                <li><a class="dropdown-item" href="{{ url('employee/appointments') }}">Appointments</a></li>
+                                <li><a class="dropdown-item" href="{{ url('employee/chat-room') }}">Chats</a></li>
+                                <li><a class="dropdown-item" href="{{ route('employee.tokens') }}">Credits</a></li>
+                                <li><a class="dropdown-item" href="{{ route('employee.notification') }}">Notifications</a></li>
+                                <li><a class="dropdown-item" href="{{ route('employee.logout') }}">Logout</a></li>
                             </ul>
                         </div>
 

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RewPaz</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}"/>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +31,14 @@
 
       gtag('config', 'G-NPE02SHZTH');
     </script>
+    <style>
+        .banner_sect .bnnr_cntnt {
+            top:40%;
+            opacity: .9;
+            width:480px;
+            padding: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,6 +73,9 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}#FAQs_tab">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                         </li>
                     </ul>
                     <div class="btn_grp">
@@ -197,7 +210,7 @@
             </div>
         </nav>
     </header>
-    <button class="talktous"><span><img src="assets/images/Bot.png" alt=""></span> TALK TO US </button>
+    <!-- <button class="talktous"><span><img src="assets/images/Bot.png" alt=""></span> TALK TO US </button> -->
     <!----------------------------Banner------------------------------------------->
     <section class="banner_sect">
     <div class="bnnr_cntnt">
@@ -205,15 +218,15 @@
         <h3>Let’s Re-Energize
             <span> Your Body and Mind!</span>
         </h3>
-        <p>“Meet the most comprehensive wellness platform for you”.</p>
-        <button class="btn">GET STARTED</button>
+        <p style="font-size:16px;">“Meet the most comprehensive wellness platform for you”.</p>
+        <button class="btn " style="font-size:15px !important;">GET STARTED</button>
     </div>
     <div class="owl-carousel owl-theme">
-        <div class="item">
+        <!-- <div class="item">
             <div class="inr_bnnr_section">
                 <img class="media_img" src="assets/Home/images/banner01.png" alt="">
             </div>
-        </div>
+        </div> -->
         <div class="item">
             <div class="inr_bnnr_section">
                 <img class="media_img" src="assets/Home/images/banner02.png" alt="">
@@ -405,8 +418,8 @@
                         <div class="head_title">
                             <h3>Bronze</h3>
                             <h4>$7,500</h4>
-                            <p> 100 Tokens
-                                <span>$75 / Token</span>
+                            <p> 100 Credits
+                                <span>$75 / Credit</span>
                             </p>
                         </div>
                         <ul>
@@ -429,8 +442,8 @@
                         <div class="head_title">
                             <h3>Silver</h3>
                             <h4>$15,000</h4>
-                            <p> 250 Tokens
-                                <span>$60 / Token</span>
+                            <p> 250 Credits
+                                <span>$60 / Credit</span>
                             </p>
                         </div>
                         <ul>
@@ -453,8 +466,8 @@
                         <div class="head_title">
                             <h3>Gold</h3>
                             <h4>$37,500</h4>
-                            <p> 750 Tokens
-                                <span>$50 / Token</span>
+                            <p> 750 Credits
+                                <span>$50 / Credit</span>
                             </p>
                         </div>
                         <ul>
@@ -558,7 +571,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card_bx">
+                <!-- <div class="card_bx">
                     <div class="inner_bt">
                         <div class="icon">
                             <img src="assets/Home/images/team05.png" alt="">
@@ -576,8 +589,8 @@
                             <p>Senior Executive </p>
                         </div>
                     </div>
-                </div>
-                <div class="card_bx">
+                </div> -->
+                <!-- <div class="card_bx">
                     <div class="inner_bt">
                         <div class="icon">
                             <img src="assets/Home/images/team05.png" alt="">
@@ -595,7 +608,7 @@
                             <p>Wangsheng Director</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="card_bx">
                     <div class="inner_bt">
                     <div class="icon">
@@ -914,7 +927,7 @@
                     </div>
                     <div class="card_bx">
                         <div class="icon_bx">
-                            <img src="assets/Home/images/team01.jpg" alt="">
+                            <img src="assets/Home/images/team01.png" alt="">
                         </div>
                         <div class="cont_team">
                             <h3>Dr. Mohit Gupta</h3>
@@ -1116,18 +1129,18 @@
                     <div class="footer_bx">
                         <h3 class="heading_ft">Menu</h3>
                         <ul>
-                            <li>
-                                <a href="#">About us</a>
-                            </li>
-                            <li>
-                                <a href="#">Pricing plans</a>
-                            </li>
-                            <li>
-                                <a href="#">Our team</a>
-                            </li>
-                            <li>
-                                <a href="#">Group therapy</a>
-                            </li>
+                        <li>
+                            <a href="{{ url('/') }}#About_tab">About us</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/') }}#Pricing_tab">Pricing plans</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/') }}#Team_tab">Our team</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/') }}#Testimonial_tab">Testimonials</a>
+                        </li>
                         </ul>
 
                     </div>
@@ -1137,18 +1150,19 @@
                         <h3 class="heading_ft">Company</h3>
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="{{url('privacy-policy')}}">Privacy & Policy</a>
                             </li>
                             <li>
-                                <a href="#"> Our services</a>
+                                <a href="{{ url('/') }}#Services_tab"> Our services</a>
                             </li>
                             <li>
-                                <a href="#"> FAQs</a>
+                                <a href="{{ url('/') }}#FAQs_tab"> FAQs</a>
                             </li>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="{{url('contact')}}">Contact Us</a>
                             </li>
                         </ul>
+                       
 
                     </div>
                 </div>
@@ -1299,6 +1313,19 @@ MARKHAM, ON, CA, L3R 9W9</span></a>
             });
 
     </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/65df19e78d261e1b5f6688dd/1hnnnqchk';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
 </body>
 
 </html>

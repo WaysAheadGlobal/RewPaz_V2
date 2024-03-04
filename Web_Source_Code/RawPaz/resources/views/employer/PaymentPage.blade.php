@@ -15,38 +15,36 @@
                                     <form action="{{url('/employer/CreateOrder')}}" method="post" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="{{ env('STRIPE_KEY') }}" id="PaymentForm">
                                         <div class="row">
                                            <h3>Add Card Details</h3>
-
-
                                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                                               <input type="hidden" name="plan_id" value="{{$result->id}}">
                                               <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="frm_grp">
-                                                  <label for="">Name On card:</label>
-                                                  <input type="text" id="name" class="form-control" name="name" value="Test">
+                                                  <label for="">Card Holder Name :</label>
+                                                  <input type="text" id="name" class="form-control" name="name" value="">
                                                 </div>
                                               </div>
                                               <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="frm_grp">
-                                                  <label for="">Number On card:</label>
-                                                    <input type="text" class="form-control" id="number" name="number" value="4111111111111111">
+                                                  <label for="">Credit/Debit Card No :</label>
+                                                    <input type="text" class="form-control" id="number" name="number" value="">
                                                 </div>
                                               </div>
                                               <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="frm_grp">
-                                                  <label for="">CVC On card:</label>
-                                                  <input type="text" class="form-control" id="cvc" name="cvc" value="123">
+                                                  <label for="">CVV No. :</label>
+                                                  <input type="password" class="form-control" id="cvc" name="cvv" value="">
                                                 </div>
                                               </div>
                                               <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="frm_grp">
                                                   <label for="">Exp Month:</label>
-                                                  <input type="text" class="form-control" id="month" name="month" value="12">
+                                                  <input type="text" class="form-control" id="month" name="month" value="">
                                                 </div>
                                               </div>
                                               <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="frm_grp">
                                                   <label for="">Exp Year:</label>
-                                                  <input type="text" class="form-control" id="year" name="year" value="2024">
+                                                  <input type="text" class="form-control" id="year" name="year" value="">
                                                 </div>
                                               </div>
 

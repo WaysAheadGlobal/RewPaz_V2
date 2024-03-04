@@ -97,7 +97,7 @@
                                     </div>
                                     <p><span>Category</span><span> {{ $plan['title'] }} Package</span></p>
                                     <p><span>Subscription Plan</span><span class="price">$ {{ $plan['price'] }}</span></p>
-                                    <p><span>Tokens Count</span><span>{{ $plan['tokens'] }} Tokens</span></p>
+                                    <p><span>Credits Count</span><span>{{ $plan['tokens'] }} Credits</span></p>
                                     <div class="pay__bx">
                                         <p><span>You have to pay</span> <span>$ {{ $plan['price'] }}</span></p>
                                     </div>

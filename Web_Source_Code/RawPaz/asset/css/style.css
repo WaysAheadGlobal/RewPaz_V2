@@ -18,6 +18,7 @@ body {
 .selectMultiple ul {
   display: none;
 }
+
 /*--------------------------------------------------------------------*/
 .header_top .navbar-expand-lg .navbar-nav .nav-link {color: #607688;font-size: 20px;font-weight: 400;position: relative;padding: 5px 15px;}
 .header_top .navbar-expand-lg .navbar-nav .nav-link.active,.header_top .navbar-expand-lg .navbar-nav .nav-link:hover{color: #313131;}
@@ -31,6 +32,7 @@ body {
 .header_top .btn_join {background: linear-gradient(160deg, #0068C4 0%, #00A7C5 100%);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); color: #fff;text-align: center;font-size: 18px;font-weight: 700; border: 0;padding: 14px 20px;line-height: normal;}
 .btn_join span:last-child {margin-left: 16px;}
 .header_top .navbar {padding:  0;}
+
 header.header_top{position: fixed;top: 0;width: 100%;left: 0;}
 header.header_top.top-fixed { position: fixed;top: 0;left: 0;width: 100%; z-index: 6;background: #FFFFFF;box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);}
 .banner_sect{background-image: url(../images/banner_header.png);background-repeat: no-repeat;width: 100%;height: 750px;background-size: cover;}

@@ -5,32 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RewPaz</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css')}}" rel="stylesheet">
+    <title>RewPaz-Contact us</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
-    <link rel='stylesheet' href='asset/css/froala_editor.pkgd.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_style.min.css'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/owl.carousel.css')}}">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel="stylesheet" href="{{asset('assets/Home/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/Home/css/responsive.css')}}">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <link rel="stylesheet" href="{{asset('asset/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/owl-carousel.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/lightbox.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/animate.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/responsive.css')}}">
-
+      gtag('config', 'G-NPE02SHZTH');
+    </script>
 </head>
 
 <body>
 <header class="header_top head_inner">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="{{url('/')}}">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{asset('assets/images/logo.png')}}" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,32 +49,32 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#About_tab">About</a>
+                            <a class="nav-link" aria-current="page" href="{{ url('/') }}#About_tab">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/') }}#Services_tab">Services</a>
+                            <a class="nav-link" href="{{ url('/') }}#Services_tab">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/') }}#Pricing_tab">Pricing</a>
+                            <a class="nav-link" href="{{ url('/') }}#Pricing_tab">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/') }}#Team_tab">Team</a>
+                            <a class="nav-link" href="{{ url('/') }}#Team_tab">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/') }}#Testimonial_tab">Testimonials</a>
+                            <a class="nav-link" href="{{ url('/') }}#Testimonial_tab">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/') }}#FAQs_tab">FAQs</a>
+                            <a class="nav-link" href="{{ url('/') }}#FAQs_tab">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/blog') }}">Blog</a>
+                            <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('employer/community') }}">Community</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/community') }}">Community</a>
+                        </li> -->
                     </ul>
-                    <!--<div class="btn_grp">
-                         <a href="{{url('/login/employer')}}"><button class="btnLogin">
+                    <div class="btn_grp">
+                        <a href="{{url('/login/employer')}}"><button class="btnLogin">
                             Login
                         </button></a>
                         <a href="{{url('/signup/employer')}}">
@@ -90,30 +98,7 @@
                         </button>
                         </a>
 
-                    </div>-->
-                    <div class="dropdown user_login">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>
-                                    <!-- <img src="{{asset('assets/images/user_img.png')}}" alt=""> -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M21.3337 13.3333C21.3337 14.7478 20.7718 16.1044 19.7716 17.1046C18.7714 18.1048 17.4148 18.6667 16.0003 18.6667C14.5858 18.6667 13.2293 18.1048 12.2291 17.1046C11.2289 16.1044 10.667 14.7478 10.667 13.3333C10.667 11.9188 11.2289 10.5623 12.2291 9.5621C13.2293 8.5619 14.5858 8 16.0003 8C17.4148 8 18.7714 8.5619 19.7716 9.5621C20.7718 10.5623 21.3337 11.9188 21.3337 13.3333Z" fill="#DFDFDF"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4563 29.3228C8.34499 29.0374 2.66699 23.1814 2.66699 16.0001C2.66699 8.63608 8.63632 2.66675 16.0003 2.66675C23.3643 2.66675 29.3337 8.63608 29.3337 16.0001C29.3337 23.3641 23.3643 29.3334 16.0003 29.3334C15.9394 29.3338 15.8785 29.3338 15.8177 29.3334C15.697 29.3334 15.5763 29.3294 15.4563 29.3228ZM7.44432 24.4134C7.34463 24.1271 7.3107 23.8221 7.34505 23.5209C7.37939 23.2197 7.48113 22.9301 7.64271 22.6736C7.80429 22.4171 8.02157 22.2003 8.27841 22.0393C8.53525 21.8782 8.82506 21.7771 9.12632 21.7434C14.3237 21.1681 17.709 21.2201 22.881 21.7554C23.1827 21.7868 23.4732 21.8867 23.7304 22.0473C23.9877 22.208 24.2049 22.4253 24.3655 22.6826C24.5261 22.9398 24.6259 23.2304 24.6572 23.5321C24.6885 23.8338 24.6506 24.1386 24.5463 24.4234C26.7629 22.1807 28.0043 19.1534 28.0003 16.0001C28.0003 9.37275 22.6277 4.00008 16.0003 4.00008C9.37299 4.00008 4.00033 9.37275 4.00033 16.0001C4.00033 19.2774 5.31433 22.2481 7.44432 24.4134Z" fill="#DFDFDF"/>
-                                      </svg>
-                                </span>
-                                   <span> {{ Auth::user()->name }}</span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                @if (Auth::user()->status==1)
-                                <li><a class="dropdown-item" href="{{route('employer.dashboard')}}">Dashboard</a></li>
-                                @else
-                                <li><a class="dropdown-item" href="{{ ('employer/subcription/'.@$result->uid) }}">Subscribe Plan</a></li>
-                                @endif
-
-
-                              <li><a class="dropdown-item" href="{{route('employer.logout')}}">Logout</a></li>
-
-                            </ul>
-                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -121,118 +106,112 @@
 <!----------------------------Banner------------------------------------------->
 <section class="blog_sect">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>THINGS TO READ</h3>
-                <h4>Tips to Help You Design Your Mental Health <br>
-                    Benefits Support</h4>
+        <div class="row py-5">
+            @if (session('error'))
+            <div class="alert alert-danger text-center" role="alert">
+                <span  style="font-size: 15px;">{{session('error')}}</span>
             </div>
-            <div class="col-lg-7 col-md-12 col-sm-12">
-                <div class="blog_details">
-                    <div class="img_post">
-                        <img src="{{asset('asset/images/blog_banner.png')}}" alt="">
-                    </div>
-                    <div class="date_post">
-                       <p><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08333C6.53183 2.08333 2.08333 6.53183 2.08333 12C2.08333 17.4682 6.53183 21.9167 12 21.9167C17.4682 21.9167 21.9167 17.4682 21.9167 12C21.9167 6.53183 17.4682 2.08333 12 2.08333ZM12 23.6667C5.567 23.6667 0.333332 18.433 0.333332 12C0.333332 5.567 5.567 0.333328 12 0.333328C18.433 0.333328 23.6667 5.567 23.6667 12C23.6667 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0031 16.3078C15.8502 16.3078 15.6962 16.2682 15.5551 16.1853L11.1567 13.5615C10.8931 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0889 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8664 14.9289 17.0029 15.4655 16.7556 15.8808C16.5911 16.155 16.3006 16.3078 16.0031 16.3078Z" fill="#6C6C6C"/>
-                      </svg></span><span>16, Aug 2023</span></p>
+            <!-- <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Failed!</strong> {{ session('error') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> -->
+            @endif
+            @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong></strong> {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <!-- <div class="alert alert-success text-center" role="alert">
+                <span style="font-size: 15px;">{{session('success')}}</span>
+            </div> -->
+            @endif
+          <div class="col-md-6">
+          <h2 class="heading_ft py-2">Contact us</h2>
+                    
+                    <div>
+                            <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C15.87 2 19 5.13 19 9C19 14.25 12 22 12 22C12 22 5 14.25 5 9C5 5.13 8.13 2 12 2ZM7 9C7 11.85 9.92 16.21 12 18.88C14.12 16.19 17 11.88 17 9C17 6.24 14.76 4 12 4C9.24 4 7 6.24 7 9ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5Z" fill="#52A2E9"/>
+                              </svg></span><span>8920 WOODBINE AVENUE 304
+MARKHAM, ON, CA, L3R 9W9</span></a>
+</div>
+                        <div>
+                        <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="#52A2E9"/>
+                              </svg></span><span>contact@rewpaz.ca</span></a>
+                        </div>
+                            
+                        
+                        <!-- <li>
+                            <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.33 14.9 16.22 14.89 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.38 15.93 8.06 13.62 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3Z" fill="#52A2E9"/>
+                              </svg></span><span>+1 386-688-3295</span></a>
+                        </li> -->
 
+                    
+          </div>
+          <div class="col-md-6">
+                <div class="sign_form">
+                    <div class="sign_scrller">
+                    <h2 class="heading_ft py-2">Enquiry Form</h2>
+                        
+                        <form action="{{route('basic.email')}}" method="post">
+                            @csrf
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="frm_grp">
+                                        <label for="" style="font-size: 17px;">Full Name <sup>*</sup> </label>
+                                        <input type="text" placeholder="Name" class="form-control" value="{{ old('name') }}" name="name">
+                                        @error('name')
+                                            <small class="text-danger">{{$message}}</small>
+                                        @enderror
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="frm_grp">
+                                        <label for="" style="font-size: 17px;">E-mail ID<sup>*</sup> </label>
+                                        <input type="text" placeholder="E-mail ID" class="form-control" name="email" value="{{ old('email') }}">
+                                        @error('email')
+                                            <small class="text-danger">{{$message}}</small>
+                                        @enderror
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="frm_grp">
+                                        <label for="" style="font-size: 17px;">Phone No<sup>*</sup> </label>
+                                        <input type="text" placeholder="Phone No." class="form-control" name="phone" value="{{ old('referral_code') }}">
+                                        @error('phone')
+                                            <small class="text-danger">{{$message}}</small>
+                                        @enderror
+                                    </div>
+                                    
+                                </div>
+                                
 
-                    </div>
-                    <div class="head_subtitle">
-                        <p>Supporting caregiver emotional well-being and prosperity today requests another degree of figuring out, receptiveness, and purposefulness.</p>
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="frm_grp">
+                                        <label for="" style="font-size: 17px;">Message</label>
+                                        <textarea  placeholder="" class="form-control" name="msg" value="{{ old('msg') }}"></textarea>
+                                    </div>
+                                   
+                                </div>
 
-                    </div>
-                    <div class="head_post">
-                        <h3>Perceive association is important for their psychological prosperity (and it additionally drives commitment)</h3>
-                    </div>
-                    <div class="post_descrip">
-                        <p>With remote/hybrid work, a great deal of representatives are longing for association at this moment. Depression is a developing psychological well-being issue. Numerous representatives used to get the greater part of their social associations in the work environment. It's critical to perceive that building social association is likewise essential for guaranteeing representative mental prosperity.</p>
-
-                    </div>
-                    <div class="head_post">
-                        <h3>Look past your EAP with regards to supporting emotional well-being in the work environment</h3>
-                    </div>
-                    <div class="post_descrip">
-                        <p>By and large, EAPs have never felt adequate. Indeed, even trying to say the word EAP, it's difficult to get purchases from representatives. Conventional EAPs are underutilized yet need to find more imaginative arrangements. There are some phenomenal raised EAPs on the lookout and you can add preventive sites like RewPaz to supplement your EAP and drive higher commitment to your psychological wellness assets.</p>
-
-                    </div>
-                    <div class="head_post">
-                        <h3>Deliver mental well-being for the whole employee life experience</h3>
-                    </div>
-                    <div class="post_descrip">
-                        <p>It's not just about viewing at your labor force overall, yet also considering every person to be an entire individual. At RewPaz, we're assisting clients with grasping the entire experience of representatives: their social determinants of wellbeing and every one of the variables that might be adding or reducing their prosperity.</p>
-
-                    </div>
-
-
+                                
+                                <div class="col-sm-12">
+                                    <div class="loonApplt_btn">                                        
+                                        <div class="btn_grp text-center">
+                                            <button class="btn btn-primary">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </form>
                 </div>
-
             </div>
-            <div class="col-lg-5 col-md-12 col-sm-12">
-                <div class="blog_list">
-                    <div class="card_bx active">
-                        <div class="img_bx">
-                            <img src="{{asset('asset/images/blog_thump.png')}}" alt="">
-                        </div>
-                        <div class="cont_bx">
-                            <h3>Tips to Help You Design Your Mental Health Benefits Support</h3>
-                            <p>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
-                              </svg></span>
-                              <span>16, Aug 2023</span></p>
-
-                        </div>
-
-                    </div>
-                    <div class="card_bx">
-                        <div class="img_bx">
-                            <img src="{{asset('asset/images/blog_thump1.png')}}" alt="">
-                        </div>
-                        <div class="cont_bx">
-                            <h3>The Transformative Power of Meditation: Cultivating Inner Harmony</h3>
-                            <p>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
-                              </svg></span>
-                              <span>16, Aug 2023</span></p>
-
-                        </div>
-
-                    </div>
-                    <div class="card_bx">
-                        <div class="img_bx">
-                            <img src="{{asset('asset/images/blog_thump2.png')}}" alt="">
-                        </div>
-                        <div class="cont_bx">
-                            <h3>Empower Your Journey: The Path to Self-Help and Personal Growth</h3>
-                            <p>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.08334C6.53181 2.08334 2.08331 6.53184 2.08331 12C2.08331 17.4682 6.53181 21.9167 12 21.9167C17.4681 21.9167 21.9166 17.4682 21.9166 12C21.9166 6.53184 17.4681 2.08334 12 2.08334ZM12 23.6667C5.56698 23.6667 0.333313 18.433 0.333313 12C0.333313 5.56701 5.56698 0.333344 12 0.333344C18.433 0.333344 23.6666 5.56701 23.6666 12C23.6666 18.433 18.433 23.6667 12 23.6667Z" fill="#6C6C6C"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.003 16.3078C15.8502 16.3078 15.6962 16.2682 15.555 16.1853L11.1567 13.5615C10.893 13.4028 10.7297 13.117 10.7297 12.809V7.15302C10.7297 6.67002 11.1217 6.27802 11.6047 6.27802C12.0888 6.27802 12.4797 6.67002 12.4797 7.15302V12.312L16.4522 14.6804C16.8663 14.9289 17.0028 15.4655 16.7555 15.8808C16.591 16.155 16.3005 16.3078 16.003 16.3078Z" fill="#6C6C6C"/>
-                              </svg></span>
-                              <span>16, Aug 2023</span></p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="btn_back">
-                    <button class="btn">Back</button>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
 
     </div>
@@ -293,17 +272,17 @@
                 <div class="footer_bx">
                     <h3 class="heading_ft">Menu</h3>
                     <ul>
-                        <li>
-                            <a href="#">About us</a>
+                    <li>
+                            <a href="{{ url('/') }}#About_tab">About us</a>
                         </li>
                         <li>
-                            <a href="#">Pricing plans</a>
+                            <a href="{{ url('/') }}#Pricing_tab">Pricing plans</a>
                         </li>
                         <li>
-                            <a href="#">Our team</a>
+                            <a href="{{ url('/') }}#Team_tab">Our team</a>
                         </li>
                         <li>
-                            <a href="#">Group therapy</a>
+                            <a href="{{ url('/') }}#Testimonial_tab">Testimonials</a>
                         </li>
                     </ul>
 
@@ -314,17 +293,18 @@
                     <h3 class="heading_ft">Company</h3>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="{{url('privacy-policy')}}">Privacy & Policy</a>
                         </li>
                         <li>
-                            <a href="#"> Our services</a>
+                            <a href="{{ url('/') }}#Services_tab"> Our services</a>
                         </li>
                         <li>
-                            <a href="#"> FAQs</a>
+                            <a href="#FAQs_tab"> FAQs</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="{{url('contact')}}">Contact Us</a>
                         </li>
+                    
                     </ul>
 
                 </div>
@@ -436,6 +416,19 @@ MARKHAM, ON, CA, L3R 9W9</span></a>
           }
         })(jQuery);
       </script>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65df19e78d261e1b5f6688dd/1hnnnqchk';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 
 </html>

@@ -137,7 +137,7 @@
         <div class="resul_txt">
             <h3>Search results</h3>
             <h4>{{ $professionals->total() }} profiles based on your search criteria</h4>
-            <p>1 Service = 1 Token</p>
+            <p>1 Service = 1 Credit</p>
         </div>
         <div class="search_bar">
             <label for="Search">Search</label>
